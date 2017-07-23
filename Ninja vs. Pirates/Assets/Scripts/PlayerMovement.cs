@@ -4,12 +4,15 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
     public float moveSpeed = 5;
     public float rotationSpeed = 100;
-    Rigidbody myRigidBody;
+    public float jumpHeight = 5;
+    public float jumpTime = .9f;
+    public float lastJump = -.9f;
+    public Rigidbody myRigidBody;
 
 	// Use this for initialization
-	void Start () {
-	
-	}
+	void Start ()    {
+        myRigidBody = GetComponent<Rigidbody>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +21,8 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate()    {
         Move();
         Turn();
+        Crouch();
+        Jump();
     }
 
     public void Move()    {
@@ -40,14 +45,17 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Jump()    {
-        if (Input.GetKey(KeyCode.Space))    {
-            
+        if (Time.time - lastJump > jumpTime)    {
+            if (Input.GetKeyDown(KeyCode.Space))    {
+                myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpHeight, myRigidBody.velocity.z);
+                lastJump = Time.time;
+            }
         }
     }
 
     public void Crouch()    {
         if (Input.GetKeyDown(KeyCode.LeftControl))    {
-            moveSpeed = 1;
+            moveSpeed = 2;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))    {
             moveSpeed = 5;
