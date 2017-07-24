@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour {
     public float moveSpeed = 5;
@@ -10,6 +11,11 @@ public class PlayerMovement : MonoBehaviour {
     public Rigidbody myRigidBody;
     public int runSpeed = 8;
     public int crouchSpeed = 2;
+    public TimerScript timer;
+    public bool stun = false;
+    public float time2;
+    public float stunTime = 1;
+   
 
 	// Use this for initialization
 	void Start ()    {
@@ -18,7 +24,10 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	}
+        if (Time.time - time2 >= stunTime)    {
+            stun = false;
+        }
+    }
 
     void FixedUpdate()    {
         Move();
@@ -28,20 +37,26 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Move()    {
-        if (Input.GetKey(KeyCode.D))    {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(0, 0, - moveSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+        if (stun == false)    {
+            gameObject.layer = 8;
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+            }
+        } else {
+            gameObject.layer = 10;
         }
     }
 
@@ -57,10 +72,12 @@ public class PlayerMovement : MonoBehaviour {
     */
     
     public void Jump()    {
-        if (Time.time - lastJump > jumpTime)    {
-            if (Input.GetKeyDown(KeyCode.Space))    {
-                myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpHeight, myRigidBody.velocity.z);
-                lastJump = Time.time;
+        if (stun == false)    {
+            if (Time.time - lastJump > jumpTime)    {
+                if (Input.GetKeyDown(KeyCode.Space))    {
+                    myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpHeight, myRigidBody.velocity.z);
+                    lastJump = Time.time;
+                }
             }
         }
     }
@@ -82,4 +99,15 @@ public class PlayerMovement : MonoBehaviour {
             moveSpeed = 5;
         }
     }
+    
+    void OnCollisionEnter(Collision coll) {
+        if (coll.gameObject.CompareTag("Barrel")) {
+            timer.AddTime(3f);
+            stun = true;
+            time2 = Time.time;
+        }
+    }
+
+    
 }
+

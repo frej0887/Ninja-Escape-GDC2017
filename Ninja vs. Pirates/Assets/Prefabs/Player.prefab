@@ -23,7 +23,7 @@ GameObject:
   - 92: {fileID: 92000012734221850}
   - 124: {fileID: 124000011768838552}
   - 81: {fileID: 81000012732027368}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -43,9 +43,9 @@ GameObject:
   - 23: {fileID: 23000010775841634}
   - 54: {fileID: 54000012371157742}
   - 114: {fileID: 114000010737632066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65000011423603292
 BoxCollider:
@@ -207,6 +207,9 @@ MonoBehaviour:
   myRigidBody: {fileID: 54000012371157742}
   runSpeed: 9
   crouchSpeed: 2
+  timer: {fileID: 0}
+  stun: 0
+  stunMove: 0.002
 --- !u!124 &124000011768838552
 Behaviour:
   m_ObjectHideFlags: 1
