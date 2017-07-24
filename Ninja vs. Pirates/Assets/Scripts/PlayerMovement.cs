@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpTime = .9f;
     public float lastJump = -.9f;
     public Rigidbody myRigidBody;
+    public int runSpeed = 8;
+    public int crouchSpeed = 2;
 
 	// Use this for initialization
 	void Start ()    {
@@ -20,21 +22,30 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()    {
         Move();
-        Turn();
         Crouch();
         Jump();
+        Run();
     }
 
     public void Move()    {
-        if (Input.GetKey(KeyCode.W))    {
-            transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))    {
+            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0, - moveSpeed * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+        }
     }
 
+    /*
     public void Turn()    {
         if (Input.GetKey(KeyCode.D))    {
             transform.Rotate(0,rotationSpeed*Time.deltaTime, 0);
@@ -43,7 +54,8 @@ public class PlayerMovement : MonoBehaviour {
             transform.Rotate(0, -rotationSpeed * Time.deltaTime, 0);
         }
     }
-
+    */
+    
     public void Jump()    {
         if (Time.time - lastJump > jumpTime)    {
             if (Input.GetKeyDown(KeyCode.Space))    {
@@ -55,9 +67,18 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Crouch()    {
         if (Input.GetKeyDown(KeyCode.LeftControl))    {
-            moveSpeed = 2;
+            moveSpeed = crouchSpeed;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))    {
+            moveSpeed = 5;
+        }
+    }
+
+    public void Run() {
+        if (Input.GetKeyDown(KeyCode.LeftShift))    {
+            moveSpeed = runSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))     {
             moveSpeed = 5;
         }
     }
