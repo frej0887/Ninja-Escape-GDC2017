@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour {
     public float moveSpeed = 5;
+    public float standardMoveSpeed = 5;
     public float rotationSpeed = 100;
     public float jumpHeight = 5;
     public float jumpTime = .9f;
@@ -15,7 +16,6 @@ public class PlayerMovement : MonoBehaviour {
     public bool stun = false;
     public float time2;
     public float stunTime = 1;
-   
 
 	// Use this for initialization
 	void Start ()    {
@@ -107,7 +107,5 @@ public class PlayerMovement : MonoBehaviour {
             time2 = Time.time;
         }
     }
-
-    
 }
 

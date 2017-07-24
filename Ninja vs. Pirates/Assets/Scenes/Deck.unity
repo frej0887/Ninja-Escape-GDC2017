@@ -188,6 +188,7 @@ GameObject:
   - 33: {fileID: 287136336}
   - 64: {fileID: 287136335}
   - 23: {fileID: 287136334}
+  - 114: {fileID: 287136338}
   m_Layer: 0
   m_Name: StickyFloor
   m_TagString: StickyFloor
@@ -251,11 +252,25 @@ Transform:
   m_GameObject: {fileID: 287136333}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2.31, y: 0.06, z: -4.38}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &287136338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287136333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013b8bc2205aa5745b915b0476a430ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickyFloorSpeed: 1
+  stickyWalk: 0
+  plMove: {fileID: 1896113783}
 --- !u!1 &523763533
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +382,11 @@ Prefab:
         type: 2}
       propertyPath: stunTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010737632066, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
+        type: 2}
+      propertyPath: stickyFloorSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42ec7c4750ec04b4db75d8d05f24dafc, type: 2}
@@ -540,3 +560,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87cdf1e05ec85d1419399e37c8d2bb21, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1896113783 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010737632066, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
+    type: 2}
+  m_PrefabInternal: {fileID: 673735600}
+  m_Script: {fileID: 11500000, guid: 75308156e540c3440944c886ac4fd0da, type: 3}
