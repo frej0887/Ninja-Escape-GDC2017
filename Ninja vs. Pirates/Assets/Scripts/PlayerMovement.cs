@@ -16,10 +16,12 @@ public class PlayerMovement : MonoBehaviour {
     public bool stun = false;
     public float time2;
     public float stunTime = 1;
+    public PlayerSound PS;
 
 	// Use this for initialization
 	void Start ()    {
         myRigidBody = GetComponent<Rigidbody>();
+        PS = GetComponent<PlayerSound>();
     }
 	
 	// Update is called once per frame
@@ -42,18 +44,22 @@ public class PlayerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+                PS.WalkSound();
             }
             if (Input.GetKey(KeyCode.S))
             {
                 transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
+                PS.WalkSound();
             }
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
+                PS.WalkSound();
             }
             if (Input.GetKey(KeyCode.W))
             {
                 transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+                PS.WalkSound();
             }
         } else {
             gameObject.layer = 10;
