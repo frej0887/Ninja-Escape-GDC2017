@@ -34,11 +34,11 @@ public class BarrelSound : MonoBehaviour {
 
 
     public void RollSound() {
-        print("RollSound");
+        //print("RollSound");
 
     
            if (!Audio.isPlaying) { 
-            Debug.Log("Is AUdio PLaying");
+           // Debug.Log("Is AUdio PLaying");
             Audio.clip = BarrelRolling;
             Audio.pitch = Random.Range(minPitch, maxPitch);
             Audio.Play();

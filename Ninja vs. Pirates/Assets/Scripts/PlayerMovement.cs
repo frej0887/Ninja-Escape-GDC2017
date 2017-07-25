@@ -32,39 +32,32 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FixedUpdate()    {
-        Move();
+        //Move(moveSpeed * Input.GetAxis("Horizontal"));
+        //MoveVer(moveSpeed * Input.GetAxis("Vertical"));
         Crouch();
         Jump();
         Run();
     }
 
-    public void Move()    {
+   /* public void Move(float speed)    {
         if (stun == false)    {
             gameObject.layer = 8;
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
-                PS.WalkSound();
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
-                PS.WalkSound();
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
-                PS.WalkSound();
-            }
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.Translate(0, 0, moveSpeed * Time.deltaTime);
-                PS.WalkSound();
-            }
+            myRigidBody.velocity = transform.right * speed + Vector3.right * myRigidBody.velocity.y;
+        
         } else {
             gameObject.layer = 10;
         }
     }
+    public void MoveVer(float speed) {
+        if (stun == false)
+        {
+            gameObject.layer = 8;
+            myRigidBody.velocity = transform.forward * speed + Vector3.right * myRigidBody.velocity.x;
+        }
+        else {
+            gameObject.layer = 10;
+        }
+    }*/
 
     /*
     public void Turn()    {
