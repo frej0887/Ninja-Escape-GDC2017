@@ -8,8 +8,6 @@ public class BarrelRoll : MonoBehaviour {
     public int way = -1;
     public Renderer rend;
     public float rotateSpeed2;
-
-
     public BarrelSound BS;
 
     // Use this for initialization
@@ -29,7 +27,7 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void Roll() {
-        myRigidBody.AddForce(0, 0, way * rotateSpeed * Time.deltaTime, ForceMode.Impulse);
+        myRigidBody.AddForce(way * rotateSpeed * Time.deltaTime, 0, 0, ForceMode.Impulse);
        
         BS.RollSound();
     }
@@ -49,7 +47,7 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void RotateTexture() {
-        rend.material.mainTextureOffset += new Vector2(rotateSpeed2 * Time.deltaTime * myRigidBody.velocity.z, 0);
+        rend.material.mainTextureOffset += new Vector2(rotateSpeed2 * Time.deltaTime * myRigidBody.velocity.x, 0);
     }
 
 }

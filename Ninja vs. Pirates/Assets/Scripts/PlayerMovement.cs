@@ -43,9 +43,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Move()    {
-        //print(moveSpeed);
-        if (stun == false)    {
-            gameObject.layer = 8;
+        //if (stun == false)    {
+           // gameObject.layer = 8;
             if (Input.GetKey(KeyCode.D))    {
                 transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
                 print(moveSpeed);
@@ -63,9 +62,9 @@ public class PlayerMovement : MonoBehaviour {
                 transform.Translate(0, 0, moveSpeed * Time.deltaTime);
                 PS.WalkSound();
             }
-        } else {
+        /*} else {
             gameObject.layer = 10;
-        }
+        }*/
     }
 
     /*
