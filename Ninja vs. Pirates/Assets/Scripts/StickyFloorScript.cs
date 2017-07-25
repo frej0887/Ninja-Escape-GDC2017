@@ -3,23 +3,24 @@ using System.Collections;
 
 public class StickyFloorScript : MonoBehaviour {
     public float stickyFloorSpeed;
-    public bool stickyWalk = false;
-    public PlayerMovement plMove;
-    public Vector2 QuadPos;
-    public Vector2 QuadSize;
-    public Vector2 PlayerPos;
-    public Vector2 PlayerSize;
+    public PlayerMovement player;
+    public Vector3 QuadPos;
+    public Vector3 QuadSize;
+    public Vector3 PlayerPos;
+    public Vector3 PlayerSize;
+
+    public Rigidbody myRigidBody;
 
     // Use this for initialization
     void Start ()    {
-        //plMove = GetComponent<PlayerMovement>();
+        //player = GetComponent<PlayerMovement>();
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        StickyFloors();
-	}
+        //StickyFloors();
+    }
 
     /*
     void OnCollisionEnter(Collision coll)
@@ -36,18 +37,41 @@ public class StickyFloorScript : MonoBehaviour {
         }
     }*/
 
+    /*
     void StickyFloors() {
-        QuadPos = new Vector2(transform.position.x, transform.position.z);
-        QuadSize = new Vector2(transform.lossyScale.x, transform.lossyScale.z);
-        PlayerPos = new Vector2(plMove.transform.position.x, plMove.transform.position.z);
-        if (QuadPos[0] - QuadSize[0]/2 < PlayerPos[0] && PlayerPos[0] < QuadPos[0] + QuadSize[0] / 2 && QuadPos[1] - QuadSize[1] / 2 < PlayerPos[1] && PlayerPos[1] < QuadPos[1] + QuadSize[1] / 2) {
-            print("Test");
-            plMove.moveSpeed = stickyFloorSpeed;
+        QuadPos = getQuadPos();
+        QuadSize = getQuadSize();
+        PlayerPos = player.getPlayerPos(); 
+        PlayerSize = player.getPlayerSize(); 
+        if (QuadPos[0] - QuadSize[0]/2 < PlayerPos[0] + PlayerSize[0]/2 &&
+            QuadPos[0] + QuadSize[0]/2 > PlayerPos[0] - PlayerSize[0]/2 &&
+            QuadPos[1] - QuadSize[1]/2 < PlayerPos[1] + PlayerSize[1]/2 &&
+            QuadPos[1] + QuadSize[1]/2 > PlayerPos[1] - PlayerSize[1]/2 &&
+            QuadPos[2] + .5 + PlayerPos[2]/2 > PlayerPos[2]) {
+            print("Slow");
+            SlowDown();
         }
         else {
-            plMove.moveSpeed = plMove.standardMoveSpeed;
+            normalPace();
+            print("Normal");    
         }
-
     }
 
+    void SlowDown() {
+        player.SlowDown();
+    }
+
+    void normalPace() {
+        player.normalPace();
+    }
+
+    public Vector3 getQuadPos()    {
+        QuadPos = new Vector3(transform.position.x, transform.position.z, transform.position.y);
+        return QuadPos;
+    }
+
+    public Vector3 getQuadSize()    {
+        QuadSize = new Vector3(transform.lossyScale.x, transform.lossyScale.z, transform.lossyScale.y);
+        return QuadSize;
+    }*/
 }

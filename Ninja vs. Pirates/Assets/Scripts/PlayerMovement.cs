@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour {
-    public float moveSpeed = 5;
+    public float moveSpeed;
     public float standardMoveSpeed = 5;
     public float rotationSpeed = 100;
     public float jumpHeight = 5;
@@ -17,9 +17,13 @@ public class PlayerMovement : MonoBehaviour {
     public float time2;
     public float stunTime = 1;
     public PlayerSound PS;
+    public Vector3 PlayerPos;
+    public Vector3 PlayerSize;
+    public float stickyFloorSpeed;
+    public bool onStickyFloor = false;
 
-	// Use this for initialization
-	void Start ()    {
+    // Use this for initialization
+    void Start ()    {
         myRigidBody = GetComponent<Rigidbody>();
         PS = GetComponent<PlayerSound>();
     }
@@ -33,31 +37,29 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()    {
         Move();
-        Crouch();
+        //Crouch();
         Jump();
-        Run();
+        //Run();
     }
 
     public void Move()    {
+        //print(moveSpeed);
         if (stun == false)    {
             gameObject.layer = 8;
-            if (Input.GetKey(KeyCode.D))
-            {
+            if (Input.GetKey(KeyCode.D))    {
                 transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+                print(moveSpeed);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.S))
-            {
+            if (Input.GetKey(KeyCode.S))    {
                 transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.A))
-            {
+            if (Input.GetKey(KeyCode.A))    {
                 transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.W))
-            {
+            if (Input.GetKey(KeyCode.W))    {
                 transform.Translate(0, 0, moveSpeed * Time.deltaTime);
                 PS.WalkSound();
             }
@@ -87,13 +89,13 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
     }
-
+    
     public void Crouch()    {
         if (Input.GetKeyDown(KeyCode.LeftControl))    {
             moveSpeed = crouchSpeed;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl))    {
-            moveSpeed = 5;
+            moveSpeed = standardMoveSpeed;
         }
     }
 
@@ -102,7 +104,7 @@ public class PlayerMovement : MonoBehaviour {
             moveSpeed = runSpeed;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))     {
-            moveSpeed = 5;
+            moveSpeed = standardMoveSpeed;
         }
     }
     
@@ -111,6 +113,38 @@ public class PlayerMovement : MonoBehaviour {
             timer.AddTime(3f);
             stun = true;
             time2 = Time.time;
+        }
+    }
+
+    public void SlowDown()    {
+        moveSpeed = stickyFloorSpeed;
+    }
+
+    public void normalPace()    {
+        moveSpeed = standardMoveSpeed;
+    }
+
+    public Vector3 getPlayerPos()    {
+        PlayerPos = new Vector3(transform.position.x, transform.position.z, transform.position.y);
+        return PlayerPos;
+    }
+
+    public Vector3 getPlayerSize()    {
+        PlayerSize = new Vector3(transform.lossyScale.x, transform.lossyScale.z, transform.lossyScale.y);
+        return PlayerSize;
+    }
+
+    void OnTriggerEnter(Collider other) {
+        if (other.tag == "StickyFloor")    {
+            onStickyFloor = true;
+            SlowDown();
+        }
+    }
+
+    void OnTriggerExit(Collider other) {
+        if (other.tag == "StickyFloor") {
+            onStickyFloor = false;
+            normalPace();
         }
     }
 }
