@@ -9,10 +9,14 @@ public class BarrelRoll : MonoBehaviour {
     public Renderer rend;
     public float rotateSpeed2;
 
+
+    public BarrelSound BS;
+
     // Use this for initialization
     void Start () {
         myRigidBody = GetComponent<Rigidbody>(); 
         rend = GetComponent<Renderer>();
+     //   BS = GetComponent<BarrelSound>();
     }
 	
 	// Update is called once per frame
@@ -25,10 +29,9 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void Roll() {
-        //transform.Rotate(rotationSpeed * Time.deltaTime, 0, 0);
-
         myRigidBody.AddForce(0, 0, way * rotateSpeed * Time.deltaTime, ForceMode.Impulse);
-        //transform.Rotate(0, 0, rotateSpeed * Time.deltaTime * way);
+       
+        BS.RollSound();
     }
 
     void OnCollisionEnter(Collision coll) {
@@ -39,6 +42,9 @@ public class BarrelRoll : MonoBehaviour {
             else if (way == 1) {
                 way = -1;
             }
+           
+           // BS.BarrelTurn();
+
         }
     }
 
