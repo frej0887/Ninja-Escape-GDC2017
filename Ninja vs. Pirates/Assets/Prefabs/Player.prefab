@@ -1255,11 +1255,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Walk: {fileID: 8300000, guid: 39f16a232de2b434abb732d2eadaf6af, type: 3}
-  Jump: []
+  Jump: {fileID: 8300000, guid: f710dda31869cda44b06bd0d2ca89424, type: 3}
+  StickySound:
+  - {fileID: 8300000, guid: 9b53a80ce17965d4e8079651a2468a58, type: 3}
+  - {fileID: 8300000, guid: b21bab10e92da144e84b37c5ab862d84, type: 3}
+  - {fileID: 8300000, guid: a9086f5374b71f7428105e519e627859, type: 3}
   Audio: {fileID: 82000011567807750}
-  volume: 1
+  WalkVolume: 1
+  JumpVolume: 1
+  StickyVolume: 1
   minWalkingPitch: 0.8
   maxWalkingPitch: 1.2
+  InSticky: 0
+  IsJumping: 0
 --- !u!124 &124000011768838552
 Behaviour:
   m_ObjectHideFlags: 1

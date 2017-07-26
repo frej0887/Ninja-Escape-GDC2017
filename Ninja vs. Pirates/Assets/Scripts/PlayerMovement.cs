@@ -86,11 +86,18 @@ public class PlayerMovement : MonoBehaviour{
     
     public void Jump()    {
         if (stun == false)    {
-            if (Time.time - lastJump > jumpTime)    {
-                if (Input.GetKeyDown(KeyCode.Space))    {
+            if (Time.time - lastJump > jumpTime)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
                     myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpHeight, myRigidBody.velocity.z);
                     lastJump = Time.time;
+                    PS.JumpSound();
+                    PS.IsJumping = true;
                 }
+            }
+            else {
+                PS.IsJumping = false;
             }
         }
     }
@@ -115,10 +122,12 @@ public class PlayerMovement : MonoBehaviour{
 
     public void SlowDown()    {
         moveSpeed = stickyFloorSpeed;
+        PS.InSticky = true;
     }
 
     public void normalPace()    {
         moveSpeed = standardMoveSpeed;
+        PS.InSticky = false;
     }
 
     public Vector3 getPlayerPos()    {
