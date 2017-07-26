@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour {
     
     public Text timerTxt;
-    public float currentTime;
+    public static float currentTime;
+
     //public float extraTime;
     //bool addTimeSpg = false;
     //int counter = 0;
 
 	// Use this for initialization
 	void Start () {
-	    
+        currentTime = 0;
 	}
 	
 	// Update is called once per frame
@@ -45,4 +47,5 @@ public class TimerScript : MonoBehaviour {
         //addTimeSpg = true;
         currentTime += ekstraTime;
     }
+   
 }
