@@ -33,7 +33,6 @@ public class PlayerSound : MonoBehaviour
                 Audio.Play();
             }
             else {
-              
                 int lyd = Random.Range(0, StickySound.Length);
                 Audio.volume = StickyVolume;
                 Audio.clip = StickySound[lyd];
