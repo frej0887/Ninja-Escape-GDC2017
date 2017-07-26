@@ -1,0 +1,789 @@
+fileFormatVersion: 2
+guid: a35ca4ab2abf013439e6a1dd98175c6e
+timeCreated: 1501057603
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bonefootleft
+    100002: Bonefootright
+    100004: Bonehandleft
+    100006: Bonehandright
+    100008: Bonehead
+    100010: Boneheadband2left
+    100012: Boneheadband2right
+    100014: Boneheadband3left
+    100016: Boneheadband3right
+    100018: Boneheadband4left
+    100020: Boneheadband4right
+    100022: Boneheadband5left
+    100024: Boneheadband5right
+    100026: Boneheadbandleft
+    100028: Boneheadbandright
+    100030: Boneheadknob
+    100032: Bonelowerarmleft
+    100034: Bonelowerarmright
+    100036: Bonelowerlegleft
+    100038: Bonelowerlegright
+    100040: Bonemaster
+    100042: Boneneck
+    100044: Boneshoulderleft
+    100046: Boneshoulderright
+    100048: Bonespine1
+    100050: Bonespine2
+    100052: Boneupperarmleft
+    100054: Boneupperarmright
+    100056: Boneupperlegleft
+    100058: Boneupperlegright
+    100060: Box002
+    100062: //RootNode
+    400000: Bonefootleft
+    400002: Bonefootright
+    400004: Bonehandleft
+    400006: Bonehandright
+    400008: Bonehead
+    400010: Boneheadband2left
+    400012: Boneheadband2right
+    400014: Boneheadband3left
+    400016: Boneheadband3right
+    400018: Boneheadband4left
+    400020: Boneheadband4right
+    400022: Boneheadband5left
+    400024: Boneheadband5right
+    400026: Boneheadbandleft
+    400028: Boneheadbandright
+    400030: Boneheadknob
+    400032: Bonelowerarmleft
+    400034: Bonelowerarmright
+    400036: Bonelowerlegleft
+    400038: Bonelowerlegright
+    400040: Bonemaster
+    400042: Boneneck
+    400044: Boneshoulderleft
+    400046: Boneshoulderright
+    400048: Bonespine1
+    400050: Bonespine2
+    400052: Boneupperarmleft
+    400054: Boneupperarmright
+    400056: Boneupperlegleft
+    400058: Boneupperlegright
+    400060: Box002
+    400062: //RootNode
+    4300000: Box002
+    7400000: Walk
+    7400002: Crouch ned
+    7400004: Crouch Op
+    7400006: Jump
+    7400008: "Crouch G\xE5"
+    7400010: Stun
+    7400012: Idle
+    9500000: //RootNode
+    13700000: Box002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouch ned
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouch Op
+      takeName: Take 001
+      firstFrame: 55
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Crouch G\xE5"
+      takeName: Take 001
+      firstFrame: 135
+      lastFrame: 204
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Stun
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 126
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 278
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bonemaster
+        weight: 1
+      - path: Bonemaster/Bonespine1
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandleft/Boneheadband2left/Boneheadband3left/Boneheadband4left/Boneheadband5left
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadbandright/Boneheadband2right/Boneheadband3right/Boneheadband4right/Boneheadband5right
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneneck/Bonehead/Boneheadknob
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderleft/Boneupperarmleft/Bonelowerarmleft/Bonehandleft
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright
+        weight: 1
+      - path: Bonemaster/Bonespine1/Bonespine2/Boneshoulderright/Boneupperarmright/Bonelowerarmright/Bonehandright
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegleft/Bonelowerlegleft/Bonefootleft
+        weight: 1
+      - path: Bonemaster/Boneupperlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright
+        weight: 1
+      - path: Bonemaster/Boneupperlegright/Bonelowerlegright/Bonefootright
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.7
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

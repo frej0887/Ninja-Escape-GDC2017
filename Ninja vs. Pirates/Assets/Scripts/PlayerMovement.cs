@@ -2,26 +2,40 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour{
+    //Move
     public float moveSpeed;
     public float standardMoveSpeed = 5;
     public float rotationSpeed = 100;
+    public int runSpeed = 8;
+
+    //Crouch
+    public int crouchSpeed = 2;
+
+    //Sticky Floor
+    public float stickyFloorSpeed;
+    public bool onStickyFloor = false;
+
+    //Jump
     public float jumpHeight = 5;
     public float jumpTime = .9f;
     public float lastJump = -.9f;
-    public Rigidbody myRigidBody;
-    public int runSpeed = 8;
-    public int crouchSpeed = 2;
-    public TimerScript timer;
+
+    //Stun
     public float addStunTime = 3f;
     public bool stun = false;
     public float time2;
     public float stunTime = 1;
+    public TimerScript timer;
+
     public PlayerSound PS;
+    public Rigidbody myRigidBody;
     public Vector3 PlayerPos;
     public Vector3 PlayerSize;
-    public float stickyFloorSpeed;
-    public bool onStickyFloor = false;
+
+    //Animation
+    public Animator ninjaController;
+    public float aniCrossFade;
 
     // Use this for initialization
     void Start ()    {
@@ -36,55 +50,39 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-    void FixedUpdate()    {
+    void FixedUpdate() {
         Move();
-        //Crouch();
-        Jump();
-        //Run();
+        Crouch();
+        if (onStickyFloor == false)    {
+            Jump();
+        }
+        Run();
     }
 
-    public void Move()
-    {
-        if (stun == false)
-        {
+    public void Move()    {
+        if (stun == false)     {
             gameObject.layer = 8;
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
-                print(moveSpeed);
+            transform.Translate(-moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
+
+            if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) {
                 PS.WalkSound();
+                ninjaController.CrossFade("Walk", aniCrossFade);
             }
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
-                PS.WalkSound();
+
+            if (Input.GetAxis("Horizontal") > 0)    {
+                transform.eulerAngles = new Vector3(0,0,0);
             }
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
-                PS.WalkSound();
+            else if (Input.GetAxis("Horizontal") < 0)    {
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.Translate(0, 0, moveSpeed * Time.deltaTime);
-                PS.WalkSound();
-            }
-            else
-            {
-                gameObject.layer = 10;
+            if (Input.GetAxis("Vertical") < 0)    {
+                transform.eulerAngles = new Vector3(0, 90, 0);
+            } 
+            else if (Input.GetAxis("Vertical") > 0)    {
+                transform.eulerAngles = new Vector3(0,-90, 0);
             }
         }
     }
-    /*
-    public void Turn()    {
-        if (Input.GetKey(KeyCode.D))    {
-            transform.Rotate(0,rotationSpeed*Time.deltaTime, 0);
-        }
-        if (Input.GetKey(KeyCode.A))    {
-            transform.Rotate(0, -rotationSpeed * Time.deltaTime, 0);
-        }
-    }
-    */
     
     public void Jump()    {
         if (stun == false)    {
@@ -98,23 +96,22 @@ public class PlayerMovement : MonoBehaviour {
     }
     
     public void Crouch()    {
-        if (Input.GetKeyDown(KeyCode.LeftControl))    {
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.X))    {
             moveSpeed = crouchSpeed;
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))    {
+        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.X))    {
             moveSpeed = standardMoveSpeed;
         }
     }
 
     public void Run() {
-        if (Input.GetKeyDown(KeyCode.LeftShift))    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Z))    {
             moveSpeed = runSpeed;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))     {
+        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.Z))     {
             moveSpeed = standardMoveSpeed;
         }
     }
-   
 
     public void SlowDown()    {
         moveSpeed = stickyFloorSpeed;
@@ -140,12 +137,11 @@ public class PlayerMovement : MonoBehaviour {
             SlowDown();
         }
 
-        if (other.gameObject.CompareTag("Barrel"))
-        {
+        if (other.gameObject.CompareTag("Barrel"))    {
             timer.AddTime(addStunTime);
             stun = true;
             time2 = Time.time;
-
+            ninjaController.CrossFade("Stun", aniCrossFade);
         }
     }
 

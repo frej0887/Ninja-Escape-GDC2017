@@ -189,7 +189,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.2
-  m_Pitch: 1.0351119
+  m_Pitch: 0.9226377
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -360,8 +360,10 @@ MonoBehaviour:
   PS: {fileID: 0}
   PlayerPos: {x: 0, y: 0, z: 0}
   PlayerSize: {x: 0, y: 0, z: 0}
-  stickyFloorSpeed: 0
+  stickyFloorSpeed: 2
   onStickyFloor: 0
+  ninjaController: {fileID: 0}
+  aniCrossFade: 0
 --- !u!114 &114000011215024478
 MonoBehaviour:
   m_ObjectHideFlags: 1

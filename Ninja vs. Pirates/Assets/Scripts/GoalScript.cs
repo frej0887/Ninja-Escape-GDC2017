@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GoalScript : MonoBehaviour {
-
+    
 	// Use this for initialization
 	void Start () {
 	
