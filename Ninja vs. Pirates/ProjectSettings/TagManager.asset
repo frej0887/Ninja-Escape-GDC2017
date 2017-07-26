@@ -8,6 +8,7 @@ TagManager:
   - EndBarrel
   - StickyFloor
   - goal
+  - SliderFloor
   layers:
   - Default
   - TransparentFX

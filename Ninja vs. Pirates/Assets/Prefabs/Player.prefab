@@ -225,7 +225,8 @@ GameObject:
   - 114: {fileID: 114000012258970688}
   - 82: {fileID: 82000011567807750}
   - 136: {fileID: 136000013344333798}
-  - 95: {fileID: 95000010146867324}
+  - 136: {fileID: 136000013392530180}
+  - 95: {fileID: 95000013099072854}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1177,23 +1178,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011415133428}
   m_Enabled: 1
---- !u!95 &95000010146867324
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011885427816}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95000012212595392
 Animator:
   serializedVersion: 3
@@ -1205,6 +1189,23 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: a35ca4ab2abf013439e6a1dd98175c6e, type: 3}
   m_Controller: {fileID: 9100000, guid: 58d9e1bf690ead6459524f792aa13bb9, type: 2}
   m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95000013099072854
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011885427816}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -1273,6 +1274,19 @@ Behaviour:
   m_GameObject: {fileID: 1000011415133428}
   m_Enabled: 1
 --- !u!136 &136000013344333798
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011885427816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 0.6757823
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!136 &136000013392530180
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
