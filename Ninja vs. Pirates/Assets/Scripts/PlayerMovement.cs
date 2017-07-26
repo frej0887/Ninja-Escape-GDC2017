@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
     public int runSpeed = 8;
     public int crouchSpeed = 2;
     public TimerScript timer;
+    public float addStunTime = 3f;
     public bool stun = false;
     public float time2;
     public float stunTime = 1;
@@ -42,31 +43,38 @@ public class PlayerMovement : MonoBehaviour {
         //Run();
     }
 
-    public void Move()    {
-        //if (stun == false)    {
-           // gameObject.layer = 8;
-            if (Input.GetKey(KeyCode.D))    {
+    public void Move()
+    {
+        if (stun == false)
+        {
+            gameObject.layer = 8;
+            if (Input.GetKey(KeyCode.D))
+            {
                 transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
                 print(moveSpeed);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.S))    {
+            if (Input.GetKey(KeyCode.S))
+            {
                 transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.A))    {
+            if (Input.GetKey(KeyCode.A))
+            {
                 transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
                 PS.WalkSound();
             }
-            if (Input.GetKey(KeyCode.W))    {
+            if (Input.GetKey(KeyCode.W))
+            {
                 transform.Translate(0, 0, moveSpeed * Time.deltaTime);
                 PS.WalkSound();
             }
-        /*} else {
-            gameObject.layer = 10;
-        }*/
+            else
+            {
+                gameObject.layer = 10;
+            }
+        }
     }
-
     /*
     public void Turn()    {
         if (Input.GetKey(KeyCode.D))    {
@@ -106,14 +114,7 @@ public class PlayerMovement : MonoBehaviour {
             moveSpeed = standardMoveSpeed;
         }
     }
-    
-    void OnCollisionEnter(Collision coll) {
-        if (coll.gameObject.CompareTag("Barrel")) {
-            timer.AddTime(3f);
-            stun = true;
-            time2 = Time.time;
-        }
-    }
+   
 
     public void SlowDown()    {
         moveSpeed = stickyFloorSpeed;
@@ -137,6 +138,14 @@ public class PlayerMovement : MonoBehaviour {
         if (other.tag == "StickyFloor")    {
             onStickyFloor = true;
             SlowDown();
+        }
+
+        if (other.gameObject.CompareTag("Barrel"))
+        {
+            timer.AddTime(addStunTime);
+            stun = true;
+            time2 = Time.time;
+
         }
     }
 

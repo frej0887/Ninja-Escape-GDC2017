@@ -23,6 +23,8 @@ public class TimerScript : MonoBehaviour {
         currentTime += Time.deltaTime;
     }
 
+
+
     public void AddTime(float ekstraTime) {
         currentTime += ekstraTime;
     }

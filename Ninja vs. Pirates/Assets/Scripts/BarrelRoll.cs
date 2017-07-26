@@ -4,10 +4,10 @@ using System.Collections;
 public class BarrelRoll : MonoBehaviour {
 
     public Rigidbody myRigidBody;
-    public int rotateSpeed;
+    public int moveSpeed;
     public int way = -1;
     public Renderer rend;
-    public float rotateSpeed2;
+    public float rotateTextureSpeed;
     public BarrelSound BS;
 
     // Use this for initialization
@@ -27,13 +27,16 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void Roll() {
-        myRigidBody.AddForce(way * rotateSpeed * Time.deltaTime, 0, 0, ForceMode.Impulse);
+        myRigidBody.AddForce(way * moveSpeed * Time.deltaTime, 0, 0, ForceMode.Impulse);
        
         BS.RollSound();
     }
 
-    void OnCollisionEnter(Collision coll) {
+    void OnTriggerEnter(Collider coll) {
+        print("Collided with: ");
+        print(coll.gameObject.name);
         if(coll.gameObject.CompareTag("EndBarrel")) {
+            myRigidBody.velocity = Vector3.zero;
             if (way == -1) {
                 way = 1;
             }
@@ -47,7 +50,7 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void RotateTexture() {
-        rend.material.mainTextureOffset += new Vector2(rotateSpeed2 * Time.deltaTime * myRigidBody.velocity.x, 0);
+        rend.material.mainTextureOffset += new Vector2(rotateTextureSpeed * Time.deltaTime * myRigidBody.velocity.x, 0);
     }
 
 }

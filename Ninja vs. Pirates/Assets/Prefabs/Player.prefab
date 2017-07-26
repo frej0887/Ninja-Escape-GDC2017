@@ -189,7 +189,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.2
-  m_Pitch: 0.94210577
+  m_Pitch: 1.0351119
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -353,6 +353,7 @@ MonoBehaviour:
   runSpeed: 9
   crouchSpeed: 2
   timer: {fileID: 0}
+  addStunTime: 3
   stun: 0
   time2: 0
   stunTime: 1
