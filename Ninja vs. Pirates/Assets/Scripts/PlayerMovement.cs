@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour{
     //Move
@@ -61,6 +62,7 @@ public class PlayerMovement : MonoBehaviour{
         if (onStickyFloor == false)    {
             Jump();
         }
+        Restart();
         //Run();
     }
 
@@ -135,6 +137,12 @@ public class PlayerMovement : MonoBehaviour{
         PS.InSticky = false;
     }
 
+    public void Restart() {
+        if(Input.GetKeyDown(KeyCode.R)) {
+            SceneManager.LoadScene("Level2");
+        }
+
+    }
     public Vector3 getPlayerPos()    {
         PlayerPos = new Vector3(transform.position.x, transform.position.z, transform.position.y);
         return PlayerPos;
@@ -158,9 +166,11 @@ public class PlayerMovement : MonoBehaviour{
             ninjaController.CrossFade("Stun", aniCrossFade);
         }
         if(other.gameObject.CompareTag("SliderFloor")) {
-            myRigidBody.AddForce(0,0, slipperyFloorSpeed * Time.deltaTime, ForceMode.Impulse);
+            onSlippery = true;       
+                
+            myRigidBody.AddForce(0, 0, slipperyFloorSpeed * Time.deltaTime, ForceMode.Impulse);
             print("SlipperyFloor Activated");
-            onSlippery = true;
+     
         } 
     }
 
@@ -173,5 +183,6 @@ public class PlayerMovement : MonoBehaviour{
             onSlippery = false;
         }
     }
+
 }
 

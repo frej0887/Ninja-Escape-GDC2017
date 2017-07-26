@@ -35,7 +35,7 @@ public class TimerScript : MonoBehaviour {
             addTimeSpg = false;
         }
         if (!addTimeSpg ^ (counter < 50000 && counter != 0))    {*/
-            timerTxt.text = "Time: " + Mathf.Floor(currentTime * 10) / 10f;
+            timerTxt.text = "Time: " + currentTime.ToString("N2");
            /* counter = 0;
         }*/
         currentTime += Time.deltaTime;
