@@ -779,7 +779,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011885427816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6106396, y: 0, z: -50.43}
+  m_LocalPosition: {x: 1.79, y: 0.49999398, z: -51.087723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1254,9 +1254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601bca05a45a6c04ebfc128faa7ac1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk: {fileID: 8300000, guid: a21adb97e75d99f439c064c8bf5ea29c, type: 3}
+  Walk: {fileID: 8300000, guid: 39f16a232de2b434abb732d2eadaf6af, type: 3}
   Jump: []
-  Audio: {fileID: 0}
+  Audio: {fileID: 82000011567807750}
   volume: 1
   minWalkingPitch: 0.8
   maxWalkingPitch: 1.2
@@ -1293,7 +1293,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 596bc43b1ca5c2741bac70a9710a77ff, type: 2}
+  - {fileID: 2100000, guid: d8a932f9fd340ce4ca304b3e53fcfeff, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
