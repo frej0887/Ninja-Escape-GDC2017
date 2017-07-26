@@ -12,9 +12,11 @@ public class PlayerMovement : MonoBehaviour{
     //Crouch
     public int crouchSpeed = 2;
 
-    //Sticky Floor
+    //Sticky and Slippery Floor
     public float stickyFloorSpeed;
     public bool onStickyFloor = false;
+    public float slipperyFloorSpeed;
+    public bool onSlippery = false;
 
     //Jump
     public float jumpHeight = 5;
@@ -51,12 +53,15 @@ public class PlayerMovement : MonoBehaviour{
     }
 
     void FixedUpdate() {
-        Move();
+        if (onSlippery == false)
+        {
+            Move();
+        }
         Crouch();
         if (onStickyFloor == false)    {
             Jump();
         }
-        Run();
+        //Run();
     }
 
     public void Move()    {
@@ -80,7 +85,7 @@ public class PlayerMovement : MonoBehaviour{
             } 
             else if (Input.GetAxis("Vertical") > 0)    {
                 transform.eulerAngles = new Vector3(0,-90, 0);
-            }
+            } 
         }
     }
     
@@ -111,14 +116,14 @@ public class PlayerMovement : MonoBehaviour{
         }
     }
 
-    public void Run() {
+   /* public void Run() {
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Z))    {
             moveSpeed = runSpeed;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.Z))     {
             moveSpeed = standardMoveSpeed;
         }
-    }
+    }*/
 
     public void SlowDown()    {
         moveSpeed = stickyFloorSpeed;
@@ -152,12 +157,20 @@ public class PlayerMovement : MonoBehaviour{
             time2 = Time.time;
             ninjaController.CrossFade("Stun", aniCrossFade);
         }
+        if(other.gameObject.CompareTag("SliderFloor")) {
+            myRigidBody.AddForce(0,0, slipperyFloorSpeed * Time.deltaTime, ForceMode.Impulse);
+            print("SlipperyFloor Activated");
+            onSlippery = true;
+        } 
     }
 
     void OnTriggerExit(Collider other) {
         if (other.tag == "StickyFloor") {
             onStickyFloor = false;
             normalPace();
+        }
+        if(other.tag == "SliderFloor") {
+            onSlippery = false;
         }
     }
 }
