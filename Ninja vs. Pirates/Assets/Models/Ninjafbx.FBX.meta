@@ -6,9 +6,73 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Bonefootleft
+    100004: Bonefootright
+    100006: Bonehandleft
+    100008: Bonehandright
+    100010: Bonehead
+    100012: Boneheadband2left
+    100014: Boneheadband2right
+    100016: Boneheadband3left
+    100018: Boneheadband3right
+    100020: Boneheadband4left
+    100022: Boneheadband4right
+    100024: Boneheadband5left
+    100026: Boneheadband5right
+    100028: Boneheadbandleft
+    100030: Boneheadbandright
+    100032: Boneheadknob
+    100034: Bonelowerarmleft
+    100036: Bonelowerarmright
+    100038: Bonelowerlegleft
+    100040: Bonelowerlegright
+    100042: Bonemaster
+    100044: Boneneck
+    100046: Boneshoulderleft
+    100048: Boneshoulderright
+    100050: Bonespine1
+    100052: Bonespine2
+    100054: Boneupperarmleft
+    100056: Boneupperarmright
+    100058: Boneupperlegleft
+    100060: Boneupperlegright
+    100062: Box002
     400000: //RootNode
+    400002: Bonefootleft
+    400004: Bonefootright
+    400006: Bonehandleft
+    400008: Bonehandright
+    400010: Bonehead
+    400012: Boneheadband2left
+    400014: Boneheadband2right
+    400016: Boneheadband3left
+    400018: Boneheadband3right
+    400020: Boneheadband4left
+    400022: Boneheadband4right
+    400024: Boneheadband5left
+    400026: Boneheadband5right
+    400028: Boneheadbandleft
+    400030: Boneheadbandright
+    400032: Boneheadknob
+    400034: Bonelowerarmleft
+    400036: Bonelowerarmright
+    400038: Bonelowerlegleft
+    400040: Bonelowerlegright
+    400042: Bonemaster
+    400044: Boneneck
+    400046: Boneshoulderleft
+    400048: Boneshoulderright
+    400050: Bonespine1
+    400052: Bonespine2
+    400054: Boneupperarmleft
+    400056: Boneupperarmright
+    400058: Boneupperlegleft
+    400060: Boneupperlegright
+    400062: Box002
     2300000: //RootNode
+    2300002: Box002
     3300000: //RootNode
+    3300002: Box002
     4300000: Box002
   materials:
     importMaterials: 1
