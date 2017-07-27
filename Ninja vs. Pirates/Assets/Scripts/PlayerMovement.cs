@@ -273,6 +273,7 @@ public class PlayerMovement : MonoBehaviour{
         }
 
         if (other.gameObject.CompareTag("Barrel"))    {
+            PS.BarrelHit();
             timer.AddTime(addStunTime);
             plusTimer.SetActive(true);
             stun = true;
