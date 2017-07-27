@@ -911,6 +911,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 79.99999, y: 80, z: 80}
   m_Center: {x: 0, y: 2.842171e-13, z: 40}
+--- !u!82 &385827268 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000011567807750, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
+    type: 2}
+  m_PrefabInternal: {fileID: 2035157487}
 --- !u!1 &389692311 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: b707e72da3d8d87408492ca257ed0a16, type: 3}
@@ -5605,13 +5610,27 @@ Prefab:
     - target: {fileID: 114000010737632066, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
         type: 2}
       propertyPath: drunkTimer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010737632066, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
         type: 2}
       propertyPath: drunk
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011885427816, guid: 42ec7c4750ec04b4db75d8d05f24dafc, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010737632066, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
+        type: 2}
+      propertyPath: timeDrunk
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012258970688, guid: 42ec7c4750ec04b4db75d8d05f24dafc,
+        type: 2}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 385827268}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42ec7c4750ec04b4db75d8d05f24dafc, type: 2}
   m_IsPrefabParent: 0
