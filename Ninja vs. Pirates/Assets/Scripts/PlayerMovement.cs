@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour{
 
     //Drunk controls
     public bool drunk = false;
+    public bool flaskHit = false;
     public float drunkTimer;
     public float timeDrunk;
 
@@ -94,7 +95,7 @@ public class PlayerMovement : MonoBehaviour{
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", false);
                     ninjaController.SetBool("Idle", false);
-                    print("Move");
+                   // print("Move");
                 }
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", true);
@@ -108,7 +109,7 @@ public class PlayerMovement : MonoBehaviour{
                     ninjaController.SetBool("Walk", false);
                     ninjaController.SetBool("Crouch", false);
                     ninjaController.SetBool("Idle", true);
-                    print("Still");
+                    //print("Still");
                 }
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", false);
@@ -271,6 +272,7 @@ public class PlayerMovement : MonoBehaviour{
             stun = true;
             ninjaController.Play("Stun");
             time2 = Time.time;
+            print("BARREL HIT");
             //ninjaController.CrossFade("Stun", aniCrossFade);
         }
         if(other.gameObject.CompareTag("SliderFloor")) {
@@ -282,7 +284,10 @@ public class PlayerMovement : MonoBehaviour{
         } 
         if (other.gameObject.CompareTag("Rome")) {
             drunkTimer = timeDrunk;
+            flaskHit = true;
+           // print("FLASK IS HIT");
         }
+       
     }
 
     void OnTriggerExit(Collider other) {
