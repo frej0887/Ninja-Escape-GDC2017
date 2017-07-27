@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GoalScript : MonoBehaviour {
-    
+    public float badtime = 20f;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,8 +15,12 @@ public class GoalScript : MonoBehaviour {
 	}
     void OnCollisionEnter(Collision coll) {
         if(coll.gameObject.CompareTag("Player")) {
-            SceneManager.LoadScene("GoalScene");
+            if (TimerScript.currentTime < badtime) {
+                SceneManager.LoadScene("GoalScene");
+            } else {
+                SceneManager.LoadScene("BadNinja");
 
+            }
         }
     }
 }
