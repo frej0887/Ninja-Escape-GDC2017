@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour{
             Jump();
         }
         Restart();
+        Quit();
     }
 
     public void Move()    {
@@ -193,9 +194,15 @@ public class PlayerMovement : MonoBehaviour{
 
     public void Restart() {
         if(Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene("Level2");
+            //SceneManager.LoadScene("Level2");
+            transform.position = new Vector3(2.61f, 0.099f, -50.43f);
         }
 
+    }
+    public void Quit() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MainMenu");
+    }
     }
     public Vector3 getPlayerPos()    {
         PlayerPos = new Vector3(transform.position.x, transform.position.z, transform.position.y);
