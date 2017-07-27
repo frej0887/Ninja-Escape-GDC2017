@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BarrelRollZAkse : MonoBehaviour {
     public Rigidbody myRigidBody;
-    public int moveSpeed;
+    public float moveSpeed;
     public int way = -1;
     public Renderer rend;
     public float rotateSpeed;
@@ -31,15 +31,17 @@ public class BarrelRollZAkse : MonoBehaviour {
     public void Roll()
     {
         myRigidBody.AddForce(0, 0, way * moveSpeed * Time.deltaTime, ForceMode.Impulse);
-        print("Is Rolling");
+       //ed print("Is Rolling");
 
         //BS.RollSound();
     }
 
-    void OnCollisionEnter(Collision coll)
+    void OnTriggerEnter(Collider coll)
     {
         if (coll.gameObject.CompareTag("EndBarrel"))
+
         {
+            myRigidBody.velocity = Vector3.zero;
             if (way == -1)
             {
                 print(way);

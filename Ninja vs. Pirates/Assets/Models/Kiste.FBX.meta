@@ -1,35 +1,15 @@
 fileFormatVersion: 2
-guid: 9b904b72b217fac42ad98412b8c7f709
-timeCreated: 1501149561
+guid: d5350b8c0dec7eb4ab907089cb94eb3d
+timeCreated: 1501179590
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cylinder002
-    100002: Cylinder003
-    100004: Cylinder004
-    100006: Cylinder005
-    100008: //RootNode
-    400000: Cylinder002
-    400002: Cylinder003
-    400004: Cylinder004
-    400006: Cylinder005
-    400008: //RootNode
-    2300000: Cylinder002
-    2300002: Cylinder003
-    2300004: Cylinder004
-    2300006: Cylinder005
-    2300008: //RootNode
-    3300000: Cylinder002
-    3300002: Cylinder003
-    3300004: Cylinder004
-    3300006: Cylinder005
-    3300008: //RootNode
-    4300000: Box001
-    4300002: Cylinder003
-    4300004: Cylinder002
-    4300006: Cylinder004
-    4300008: Cylinder005
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Kiste
   materials:
     importMaterials: 1
     materialName: 0
