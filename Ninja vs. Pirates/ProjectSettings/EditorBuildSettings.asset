@@ -21,3 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level switch.unity
   - enabled: 1
     path: Assets/Scenes/Level_2.unity
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+  - enabled: 1
+    path: Assets/Scenes/Level2_BACKUP.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_Tutorial.unity

@@ -18,6 +18,6 @@ public class RestartScript : MonoBehaviour {
     }
 
     void TaskOnClick()    {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("MainMenu");
     }
 }

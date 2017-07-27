@@ -3,14 +3,13 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
-public class ToLvlSelect : MonoBehaviour {
-    public Button LvlSelectBtn;
+public class HowToPlay : MonoBehaviour {
+    public Button HowToPlayBtn;
 
     // Use this for initialization
     void Start()
     {
-        Button btnLvl1 = LvlSelectBtn.GetComponent<Button>();
+        Button btnLvl1 = HowToPlayBtn.GetComponent<Button>();
         btnLvl1.onClick.AddListener(TaskOnClick);
     }
 
@@ -21,6 +20,6 @@ public class ToLvlSelect : MonoBehaviour {
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene("Level switch");
+        SceneManager.LoadScene("HowToPlay");
     }
 }
