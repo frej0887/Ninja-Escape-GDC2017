@@ -8,14 +8,17 @@ public class PlayerSound : MonoBehaviour
     public AudioClip Walk;
     public AudioClip Jump;
     public AudioClip[] StickySound;
+    public AudioClip BarrelHitSound;
 
     public AudioSource Audio;
 
     public float WalkVolume;
     public float JumpVolume;
     public float StickyVolume;
+    public float BarrelHitVolume;
     public float minWalkingPitch;
     public float maxWalkingPitch;
+    
 
     public bool InSticky = false;
     public bool IsJumping = false;
@@ -57,5 +60,14 @@ public class PlayerSound : MonoBehaviour
         Audio.Stop();
 
     }
+    public void BarrelHit() {
+
+        Audio.volume = BarrelHitVolume;
+        Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
+        Audio.clip = BarrelHitSound;
+        Audio.Play();
+
+    }
+
 
 }
