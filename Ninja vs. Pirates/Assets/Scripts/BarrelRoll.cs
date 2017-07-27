@@ -37,14 +37,13 @@ public class BarrelRoll : MonoBehaviour {
         print(coll.gameObject.name);
         if(coll.gameObject.CompareTag("EndBarrel")) {
             myRigidBody.velocity = Vector3.zero;
+            BS.BarrelTurn();
             if (way == -1) {
                 way = 1;
             }
             else if (way == 1) {
                 way = -1;
             }
-           
-           // BS.BarrelTurn();
 
         }
     }

@@ -26,8 +26,7 @@ GameObject:
   - 54: {fileID: 54000012329219848}
   - 82: {fileID: 82000012022376780}
   - 114: {fileID: 114000014219021608}
-  - 82: {fileID: 82000010925193710}
-  - 114: {fileID: 114000013574458372}
+  - 82: {fileID: 82000011524985870}
   m_Layer: 9
   m_Name: Barrel
   m_TagString: Barrel
@@ -151,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013137204628}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.24, y: 87.837906, z: 8.53}
+  m_LocalPosition: {x: 5.621857, y: -1.6713231, z: -4.5226526}
   m_LocalScale: {x: 1.0000014, y: 1, z: 1.0000014}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children:
@@ -356,7 +355,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &82000010925193710
+--- !u!82 &82000011524985870
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -365,10 +364,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 06ae278c0cdfa6f42ab9135ef82b4c72, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.04
-  m_Pitch: 1.0180554
+  m_Volume: 0.02
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -441,7 +440,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.04
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -521,24 +520,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000013574458372
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010971827760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8508db3b2bbd8954699103a78327b0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Barrelturn: {fileID: 0}
-  BarrelRolling: {fileID: 8300000, guid: 06ae278c0cdfa6f42ab9135ef82b4c72, type: 3}
-  Audio: {fileID: 82000010925193710}
-  volume: 0.04
-  minPitch: 0.8
-  maxPitch: 1.2
-  BR: {fileID: 114000014281434060}
 --- !u!114 &114000014219021608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -550,12 +531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8508db3b2bbd8954699103a78327b0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Barrelturn: {fileID: 0}
+  Barrelturn: {fileID: 8300000, guid: 3a7af6c847c24a145ad5898ac592221c, type: 3}
   BarrelRolling: {fileID: 8300000, guid: 06ae278c0cdfa6f42ab9135ef82b4c72, type: 3}
   Audio: {fileID: 82000012022376780}
-  volume: 0.04
-  minPitch: 0.8
-  maxPitch: 1.2
+  Audio2: {fileID: 82000011524985870}
+  minPitch: 0.915
+  maxPitch: 1.15
   BR: {fileID: 114000014281434060}
 --- !u!114 &114000014281434060
 MonoBehaviour:
@@ -573,7 +554,7 @@ MonoBehaviour:
   way: -1
   rend: {fileID: 23000010810701080}
   rotateTextureSpeed: 0
-  BS: {fileID: 114000013574458372}
+  BS: {fileID: 114000014219021608}
 --- !u!136 &136000013826225066
 CapsuleCollider:
   m_ObjectHideFlags: 1
