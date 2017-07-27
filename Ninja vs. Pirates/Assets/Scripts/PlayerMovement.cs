@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour{
     public float jumpHeight = 5;
     public float jumpTime = .9f;
     public float lastJump = -.9f;
+    public bool isJumping =  false;
 
     //Stun
     public float addStunTime = 3f;
@@ -60,12 +61,14 @@ public class PlayerMovement : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-
         drunkTimer -= Time.deltaTime;
         if (Time.time - time2 >= stunTime)    {
             stun = false;
             plusTimer.SetActive(false);
-        }
+        }/*
+        if (ninjaController.GetBool("Jump") == true && transform.position.y)    {
+            ninjaController.SetBool("Jump", false);
+        }*/
     }
 
     void FixedUpdate() {
@@ -85,13 +88,31 @@ public class PlayerMovement : MonoBehaviour{
             gameObject.layer = 8;
             transform.Translate(-moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
 
-            if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) {
+            if ((Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) && isJumping == false) {
                 PS.WalkSound();
-                if (!crouch)     {
-                    ninjaController.CrossFade("Walk", aniCrossFade);
+                if (!crouch)    {
+                    ninjaController.SetBool("Walk", true);
+                    ninjaController.SetBool("Crouch", false);
+                    ninjaController.SetBool("Idle", false);
                 }
                 else if (crouch)    {
-                    ninjaController.CrossFade("Crouch Gå", aniCrossFade);
+                    ninjaController.SetBool("Walk", true);
+                    ninjaController.SetBool("Crouch", true);
+                    ninjaController.SetBool("Jump", false);
+                    ninjaController.SetBool("Idle", false);
+                }
+            }
+            else if ((Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0) && isJumping == false)     {
+                if (!crouch)    {
+                    ninjaController.SetBool("Walk", false);
+                    ninjaController.SetBool("Crouch", false);
+                    ninjaController.SetBool("Idle", true);
+                }
+                else if (crouch)    {
+                    ninjaController.SetBool("Walk", false);
+                    ninjaController.SetBool("Crouch", true);
+                    ninjaController.SetBool("Jump", false);
+                    ninjaController.SetBool("Idle", false);
                 }
             }
 
@@ -107,7 +128,6 @@ public class PlayerMovement : MonoBehaviour{
             else if (Input.GetAxis("Vertical") > 0)    {
                 transform.eulerAngles = new Vector3(0,-90, 0);
             }
-            print("Normal");
         }
         else if (stun == false && drunkTimer >= 0)    {
             gameObject.layer = 8;
@@ -116,10 +136,28 @@ public class PlayerMovement : MonoBehaviour{
             if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)     {
                 PS.WalkSound();
                 if (!crouch)    {
-                    ninjaController.CrossFade("Walk", aniCrossFade);
+                    ninjaController.SetBool("Walk", true);
+                    ninjaController.SetBool("Crouch", false);
+                    ninjaController.SetBool("Idle", false);
                 }
                 else if (crouch)    {
-                    ninjaController.CrossFade("Crouch Gå", aniCrossFade);
+                    ninjaController.SetBool("Walk", true);
+                    ninjaController.SetBool("Crouch", true);
+                    ninjaController.SetBool("Jump", false);
+                    ninjaController.SetBool("Idle", false);
+                }
+            }
+            else if ((Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0) && isJumping == false)     {
+                if (!crouch)     {
+                    ninjaController.SetBool("Walk", false);
+                    ninjaController.SetBool("Crouch", false);
+                    ninjaController.SetBool("Idle", true);
+                }
+                else if (crouch)    {
+                    ninjaController.SetBool("Walk", false);
+                    ninjaController.SetBool("Crouch", true);
+                    ninjaController.SetBool("Jump", false);
+                    ninjaController.SetBool("Idle", false);
                 }
             }
 
@@ -139,15 +177,18 @@ public class PlayerMovement : MonoBehaviour{
     }
     
     public void Jump()    {
-        if (stun == false)    {
-            if (Time.time - lastJump > jumpTime)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
+        if (stun == false && crouch == false)    {
+            if (Time.time - lastJump > jumpTime) {
+                if (Input.GetKeyDown(KeyCode.Space)) {
                     myRigidBody.velocity = new Vector3(myRigidBody.velocity.x, jumpHeight, myRigidBody.velocity.z);
                     lastJump = Time.time;
                     PS.JumpSound();
                     PS.IsJumping = true;
+                    isJumping = true;
+                    ninjaController.SetBool("Walk", false);
+                    ninjaController.SetBool("Crouch", false);
+                    ninjaController.SetBool("Jump", true);
+                    ninjaController.SetBool("Idle", false);
                 }
             }
             else {
@@ -160,15 +201,13 @@ public class PlayerMovement : MonoBehaviour{
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.X))    {
             moveSpeed = crouchSpeed;
             myCapsuleCollider.height = crouchHeight;
-            myCapsuleCollider.center = new Vector3(0, .28f, 0); 
-            ninjaController.CrossFade("Crouch ned", aniCrossFade);
+            myCapsuleCollider.center = new Vector3(0, .28f, 0);
             crouch = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.X))    {
             moveSpeed = standardMoveSpeed;
             myCapsuleCollider.height = normalHeight;
             myCapsuleCollider.center = new Vector3(0, .7f, 0);
-            ninjaController.CrossFade("Crouch Op", aniCrossFade);
             crouch = false;
         }
     }
