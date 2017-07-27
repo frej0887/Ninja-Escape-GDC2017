@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-        drunkTimer -= Time.deltaTime;
+        drunkTimer -= Time.deltaTime+0.001f;
         if (Time.time - time2 >= stunTime)    {
             stun = false;
             plusTimer.SetActive(false);
@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour{
     }
 
     void FixedUpdate() {
+        
         if (onSlippery == false)    {
             Move();
         }
@@ -95,8 +96,12 @@ public class PlayerMovement : MonoBehaviour{
             gameObject.layer = 8;
             transform.Translate(-moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
 
+            if (PS.HasPlayedStartSound) {
+                PS.EndDrunk();
+            }
+
             if ((Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) && isJumping == false) {
-                PS.WalkSound();
+                
                 if (!crouch)    {
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", false);
@@ -127,23 +132,32 @@ public class PlayerMovement : MonoBehaviour{
 
             if (Input.GetAxis("Horizontal") > 0)    {
                 transform.eulerAngles = new Vector3(0,0,0);
+                PS.WalkSound();
             }
             else if (Input.GetAxis("Horizontal") < 0)    {
                 transform.eulerAngles = new Vector3(0, 180, 0);
+                PS.WalkSound();
             }
             if (Input.GetAxis("Vertical") < 0)    {
                 transform.eulerAngles = new Vector3(0, 90, 0);
+                PS.WalkSound();
             } 
             else if (Input.GetAxis("Vertical") > 0)    {
                 transform.eulerAngles = new Vector3(0,-90, 0);
+                PS.WalkSound();
             }
         }
         else if (stun == false && drunkTimer >= 0)    {
             gameObject.layer = 8;
             transform.Translate(moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, -moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
+            if (!PS.HasPlayedStartSound) {
+                PS.StartDrunk();
+
+            }
 
             if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)     {
                 PS.WalkSound();
+                PS.DrunkWalkSound();
                 if (!crouch)    {
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", false);
