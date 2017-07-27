@@ -15,7 +15,7 @@ public class SlipperyFloorScript : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
-            print("SlipperyFloor");
+            //print("SlipperyFloor");
                if(Vector3.Distance(transform.position, player.transform.position) > pushBackDistance ) {
                 //player.GetComponent<Pl>();
                }

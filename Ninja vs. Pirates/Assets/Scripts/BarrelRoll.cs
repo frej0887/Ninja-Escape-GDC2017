@@ -33,8 +33,8 @@ public class BarrelRoll : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider coll) {
-        print("Collided with: ");
-        print(coll.gameObject.name);
+        //print("Collided with: ");
+       // print(coll.gameObject.name);
         if(coll.gameObject.CompareTag("EndBarrel")) {
             myRigidBody.velocity = Vector3.zero;
             BS.BarrelTurn();
