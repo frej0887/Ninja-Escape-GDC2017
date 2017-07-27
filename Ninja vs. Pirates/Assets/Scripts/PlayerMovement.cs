@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour{
 
     //Crouch
     public int crouchSpeed = 2;
+    public float normalCrouchHeight = 0.6757823f;
+    public float crouchHeight = 0.4f;
 
     //Sticky and Slippery Floor
     public float stickyFloorSpeed;
@@ -30,11 +32,17 @@ public class PlayerMovement : MonoBehaviour{
     public float time2;
     public float stunTime = 1;
     public TimerScript timer;
+    public GameObject plusTimer;
 
     public PlayerSound PS;
     public Rigidbody myRigidBody;
     public Vector3 PlayerPos;
     public Vector3 PlayerSize;
+
+    //Drunk controls
+    public bool drunk = false;
+    public float drunkTimer;
+    public float timeDrunk;
 
     //Animation
     public Animator ninjaController;
@@ -48,14 +56,16 @@ public class PlayerMovement : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
+
+        drunkTimer -= Time.deltaTime;
         if (Time.time - time2 >= stunTime)    {
             stun = false;
+            plusTimer.SetActive(false);
         }
     }
 
     void FixedUpdate() {
-        if (onSlippery == false)
-        {
+        if (onSlippery == false)    {
             Move();
         }
         Crouch();
@@ -63,11 +73,10 @@ public class PlayerMovement : MonoBehaviour{
             Jump();
         }
         Restart();
-        //Run();
     }
 
     public void Move()    {
-        if (stun == false)     {
+        if (stun == false && drunkTimer < 0)     {
             gameObject.layer = 8;
             transform.Translate(-moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
 
@@ -87,7 +96,30 @@ public class PlayerMovement : MonoBehaviour{
             } 
             else if (Input.GetAxis("Vertical") > 0)    {
                 transform.eulerAngles = new Vector3(0,-90, 0);
-            } 
+            }
+            print("Normal");
+        }
+        else if (stun == false && drunkTimer >= 0)    {
+            gameObject.layer = 8;
+            transform.Translate(moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0, -moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), Space.World);
+
+            if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)     {
+                PS.WalkSound();
+                ninjaController.CrossFade("Walk", aniCrossFade);
+            }
+
+            if (Input.GetAxis("Horizontal") < 0)    {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else if (Input.GetAxis("Horizontal") > 0)    {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+            if (Input.GetAxis("Vertical") > 0)     {
+                transform.eulerAngles = new Vector3(0, 90, 0);
+            }
+            else if (Input.GetAxis("Vertical") < 0)     {
+                transform.eulerAngles = new Vector3(0, -90, 0);
+            }
         }
     }
     
@@ -112,6 +144,7 @@ public class PlayerMovement : MonoBehaviour{
     public void Crouch()    {
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.X))    {
             moveSpeed = crouchSpeed;
+
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.X))    {
             moveSpeed = standardMoveSpeed;
@@ -161,6 +194,7 @@ public class PlayerMovement : MonoBehaviour{
 
         if (other.gameObject.CompareTag("Barrel"))    {
             timer.AddTime(addStunTime);
+            plusTimer.SetActive(true);
             stun = true;
             time2 = Time.time;
             ninjaController.CrossFade("Stun", aniCrossFade);
@@ -172,6 +206,9 @@ public class PlayerMovement : MonoBehaviour{
             print("SlipperyFloor Activated");
      
         } 
+        if (other.gameObject.CompareTag("Rome")) {
+            drunkTimer = timeDrunk;
+        }
     }
 
     void OnTriggerExit(Collider other) {

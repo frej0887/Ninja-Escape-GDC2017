@@ -9,6 +9,7 @@ TagManager:
   - StickyFloor
   - goal
   - SliderFloor
+  - Rome
   layers:
   - Default
   - TransparentFX
