@@ -41,6 +41,7 @@ public class PlayerSound : MonoBehaviour
                 Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
                 Audio.clip = Walk;
                 Audio.Play();
+                
             }
             else {
                 int lyd = Random.Range(0, StickySound.Length);
@@ -78,11 +79,15 @@ public class PlayerSound : MonoBehaviour
     }
     public void DrunkWalkSound() {
         WalkSound();
-        AudioSource2.volume = BarrelHitVolume;
-        AudioSource2.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
-        int lyd = Random.Range(0, BubblesSound.Length);
-        AudioSource2.clip = BubblesSound[lyd];
-        AudioSource2.Play();
+        if (!AudioSource2.isPlaying)
+        {
+
+            AudioSource2.volume = BubblesVolume;
+            AudioSource2.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
+            int lyd = Random.Range(0, BubblesSound.Length);
+            AudioSource2.clip = BubblesSound[lyd];
+            AudioSource2.Play();
+        }
     }
     public void StartDrunk()
     {
@@ -100,7 +105,10 @@ public class PlayerSound : MonoBehaviour
         Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
         Audio.clip = Burp;
         Audio.Play();
+        AudioSource2.Stop();
         HasPlayedStartSound = false;
+
+        
     }
 
 }

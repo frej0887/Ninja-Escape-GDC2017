@@ -86,6 +86,7 @@ GameObject:
   - 114: {fileID: 114000014008177894}
   - 82: {fileID: 82000013726179392}
   - 136: {fileID: 136000012437903714}
+  - 82: {fileID: 82000010414325636}
   m_Layer: 8
   m_Name: Player 1
   m_TagString: Player
@@ -799,7 +800,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010679243772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.299346, y: -0.0000012492847, z: -10.47976}
+  m_LocalPosition: {x: 2.61, y: -0.0000012492847, z: -50.43}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -815,7 +816,7 @@ Transform:
   m_GameObject: {fileID: 1000014013151436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000013649639290}
@@ -1095,6 +1096,81 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!82 &82000010414325636
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010679243772}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243000010026642784, guid: b7d24d73da6aeef4799c4e8a174e852c,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!82 &82000013726179392
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1234,7 +1310,7 @@ MonoBehaviour:
   PlayerSize: {x: 0, y: 0, z: 0}
   drunk: 0
   flaskHit: 0
-  drunkTimer: 0
+  drunkTimer: -1
   timeDrunk: 8
   Flask: {fileID: 0}
   Flask2: {fileID: 0}
@@ -1263,13 +1339,29 @@ MonoBehaviour:
   BarrelHitSound:
   - {fileID: 8300000, guid: d8474e901abdb8f40929ed8035a0a03b, type: 3}
   - {fileID: 8300000, guid: 0d95a8088c31d8f45853585b06fca2d3, type: 3}
+  StartDrunkSound:
+  - {fileID: 8300000, guid: e4d416b94e3b0f24486e2e50739e89d3, type: 3}
+  - {fileID: 8300000, guid: 6804ba69467ecff4f8cbead529aacb43, type: 3}
+  BubblesSound:
+  - {fileID: 8300000, guid: d767cc2a993c42748ad53231c92b7419, type: 3}
+  - {fileID: 8300000, guid: 37e09c9b364f69448b9c1f0fd34cd00b, type: 3}
+  - {fileID: 8300000, guid: a35e44c39e7fb354d9a8b84cf3a58249, type: 3}
+  - {fileID: 8300000, guid: 085880ba35599d042ba08aa58ab4d7d8, type: 3}
+  - {fileID: 8300000, guid: 50c014717fb7f7b41856580d9c5b95ac, type: 3}
+  - {fileID: 8300000, guid: 12cb57911abe2ad4dbd10e3f0b88fc48, type: 3}
+  Burp: {fileID: 8300000, guid: 311a7148c45815840a4eb0545f099775, type: 3}
   Audio: {fileID: 82000013726179392}
-  WalkVolume: 0.4
+  AudioSource2: {fileID: 82000010414325636}
+  WalkVolume: 1
   JumpVolume: 0.4
   StickyVolume: 1
   BarrelHitVolume: 1
   minWalkingPitch: 0.8
   maxWalkingPitch: 1.2
+  BubblesVolume: 1
+  DrunkStartVolume: 1
+  BurpVolume: 1
+  HasPlayedStartSound: 0
   InSticky: 0
   IsJumping: 0
 --- !u!124 &124000011281522110
