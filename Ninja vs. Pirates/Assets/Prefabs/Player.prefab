@@ -225,7 +225,6 @@ GameObject:
   - 114: {fileID: 114000012258970688}
   - 82: {fileID: 82000011567807750}
   - 136: {fileID: 136000013344333798}
-  - 136: {fileID: 136000013392530180}
   - 95: {fileID: 95000013099072854}
   m_Layer: 8
   m_Name: Player
@@ -233,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011897358170
 GameObject:
   m_ObjectHideFlags: 1
@@ -795,7 +794,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011885427816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6106396, y: 0.09999898, z: -50.43}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1202,9 +1201,9 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011885427816}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d9e1bf690ead6459524f792aa13bb9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1228,8 +1227,10 @@ MonoBehaviour:
   rotationSpeed: 100
   runSpeed: 9
   crouchSpeed: 2
-  normalCrouchHeight: 0.6757823
+  normalHeight: 1.4
   crouchHeight: 0.4
+  myCapsuleCollider: {fileID: 0}
+  crouch: 0
   stickyFloorSpeed: 2
   onStickyFloor: 0
   slipperyFloorSpeed: 0
@@ -1249,9 +1250,9 @@ MonoBehaviour:
   PlayerSize: {x: 0, y: 0, z: 0}
   drunk: 0
   drunkTimer: 0
-  drunkTime: 0
-  ninjaController: {fileID: 0}
-  aniCrossFade: 0.01
+  timeDrunk: 8
+  ninjaController: {fileID: 95000012212595392}
+  aniCrossFade: 0.05
 --- !u!114 &114000012258970688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1266,7 +1267,7 @@ MonoBehaviour:
   Walk: {fileID: 8300000, guid: 39f16a232de2b434abb732d2eadaf6af, type: 3}
   Jump: {fileID: 8300000, guid: f710dda31869cda44b06bd0d2ca89424, type: 3}
   StickySound: []
-  Audio: {fileID: 0}
+  Audio: {fileID: 82000011567807750}
   WalkVolume: 1
   JumpVolume: 1
   StickyVolume: 1
@@ -1290,23 +1291,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 0.6757823
+  m_Radius: 0.34
+  m_Height: 1.4
   m_Direction: 1
-  m_Center: {x: 0, y: 0.4, z: 0}
---- !u!136 &136000013392530180
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011885427816}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 0.6757823
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.4, z: 0}
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!137 &137000013252531452
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
