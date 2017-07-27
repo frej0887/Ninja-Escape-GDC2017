@@ -94,11 +94,12 @@ public class PlayerMovement : MonoBehaviour{
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", false);
                     ninjaController.SetBool("Idle", false);
+                    print("Move");
                 }
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", true);
-                    ninjaController.SetBool("Jump", false);
+                    //ninjaController.SetBool("Jump", false);
                     ninjaController.SetBool("Idle", false);
                 }
             }
@@ -107,11 +108,12 @@ public class PlayerMovement : MonoBehaviour{
                     ninjaController.SetBool("Walk", false);
                     ninjaController.SetBool("Crouch", false);
                     ninjaController.SetBool("Idle", true);
+                    print("Still");
                 }
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", false);
                     ninjaController.SetBool("Crouch", true);
-                    ninjaController.SetBool("Jump", false);
+                    //ninjaController.SetBool("Jump", false);
                     ninjaController.SetBool("Idle", false);
                 }
             }
@@ -143,7 +145,7 @@ public class PlayerMovement : MonoBehaviour{
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", true);
                     ninjaController.SetBool("Crouch", true);
-                    ninjaController.SetBool("Jump", false);
+                    //ninjaController.SetBool("Jump", false);
                     ninjaController.SetBool("Idle", false);
                 }
             }
@@ -156,7 +158,7 @@ public class PlayerMovement : MonoBehaviour{
                 else if (crouch)    {
                     ninjaController.SetBool("Walk", false);
                     ninjaController.SetBool("Crouch", true);
-                    ninjaController.SetBool("Jump", false);
+                    //ninjaController.SetBool("Jump", false);
                     ninjaController.SetBool("Idle", false);
                 }
             }
@@ -187,8 +189,9 @@ public class PlayerMovement : MonoBehaviour{
                     isJumping = true;
                     ninjaController.SetBool("Walk", false);
                     ninjaController.SetBool("Crouch", false);
-                    ninjaController.SetBool("Jump", true);
+                    //ninjaController.SetBool("Jump", true);
                     ninjaController.SetBool("Idle", false);
+                    ninjaController.Play("Jump");
                 }
             }
             else {
@@ -202,6 +205,7 @@ public class PlayerMovement : MonoBehaviour{
             moveSpeed = crouchSpeed;
             myCapsuleCollider.height = crouchHeight;
             myCapsuleCollider.center = new Vector3(0, .28f, 0);
+            ninjaController.Play("Crouch ned");
             crouch = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.X))    {
@@ -265,8 +269,9 @@ public class PlayerMovement : MonoBehaviour{
             timer.AddTime(addStunTime);
             plusTimer.SetActive(true);
             stun = true;
+            ninjaController.Play("Stun");
             time2 = Time.time;
-            ninjaController.CrossFade("Stun", aniCrossFade);
+            //ninjaController.CrossFade("Stun", aniCrossFade);
         }
         if(other.gameObject.CompareTag("SliderFloor")) {
             onSlippery = true;       
