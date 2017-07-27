@@ -283,6 +283,18 @@ Prefab:
       propertyPath: plusTimer
       value: 
       objectReference: {fileID: 917824244}
+    - target: {fileID: 4000012243048708, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -50.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012243048708, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012243048708, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.61
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
   m_IsPrefabParent: 0
@@ -3268,7 +3280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 1817705092}
+  plMove: {fileID: 0}
 --- !u!1001 &184544393
 Prefab:
   m_ObjectHideFlags: 0
@@ -11466,7 +11478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 1817705092}
+  plMove: {fileID: 0}
 --- !u!1001 &553487773
 Prefab:
   m_ObjectHideFlags: 0
@@ -19198,7 +19210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 1817705092}
+  plMove: {fileID: 0}
 --- !u!1001 &941572793
 Prefab:
   m_ObjectHideFlags: 0
@@ -25376,7 +25388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 1817705092}
+  plMove: {fileID: 0}
 --- !u!1001 &1236110574
 Prefab:
   m_ObjectHideFlags: 0
@@ -25455,7 +25467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 1817705092}
+  plMove: {fileID: 0}
 --- !u!1001 &1244088057
 Prefab:
   m_ObjectHideFlags: 0
@@ -34797,12 +34809,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b707e72da3d8d87408492ca257ed0a16, type: 3}
   m_IsPrefabParent: 0
---- !u!114 &1817705092 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000010956004854, guid: 198d0d07710debe499d1cb3559f7f34a,
-    type: 2}
-  m_PrefabInternal: {fileID: 15614486}
-  m_Script: {fileID: 11500000, guid: 75308156e540c3440944c886ac4fd0da, type: 3}
 --- !u!1001 &1821039619
 Prefab:
   m_ObjectHideFlags: 0
