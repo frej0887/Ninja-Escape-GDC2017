@@ -48,6 +48,12 @@ public class PlayerMovement : MonoBehaviour{
     public bool flaskHit = false;
     public float drunkTimer;
     public float timeDrunk;
+    public GameObject Flask;
+    public GameObject Flask2;
+    public GameObject Flask3;
+    public GameObject Flask4;
+    public GameObject Flask5;
+
 
     //Animation
     public Animator ninjaController;
@@ -285,7 +291,15 @@ public class PlayerMovement : MonoBehaviour{
         if (other.gameObject.CompareTag("Rome")) {
             drunkTimer = timeDrunk;
             flaskHit = true;
-           // print("FLASK IS HIT");
+           // Destroy(Flask.gameObject);
+
+           /* Destroy(Flask2.gameObject);
+            Destroy(Flask3.gameObject);
+            Destroy(Flask4.gameObject);
+            Destroy(Flask5.gameObject);*/
+         
+
+            // print("FLASK IS HIT");
         }
        
     }
