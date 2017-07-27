@@ -356,6 +356,7 @@ GameObject:
   - 222: {fileID: 660680066}
   - 114: {fileID: 660680065}
   - 114: {fileID: 660680064}
+  - 114: {fileID: 660680067}
   m_Layer: 5
   m_Name: LvlSelect
   m_TagString: Untagged
@@ -456,6 +457,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 660680062}
+--- !u!114 &660680067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660680062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8670a7fe9d42ea74880e70237b670f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LvlSelectBtn: {fileID: 660680064}
 --- !u!1 &837009471
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +480,7 @@ GameObject:
   - 222: {fileID: 837009475}
   - 114: {fileID: 837009474}
   - 114: {fileID: 837009473}
+  - 114: {fileID: 837009476}
   m_Layer: 5
   m_Name: HowToPlay
   m_TagString: Untagged
@@ -567,6 +581,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837009471}
+--- !u!114 &837009476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837009471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e171e2689b0b21e40a4b14bb981ca157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HowToPlayBtn: {fileID: 837009473}
 --- !u!1 &1027784231
 GameObject:
   m_ObjectHideFlags: 0
