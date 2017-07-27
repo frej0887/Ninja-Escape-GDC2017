@@ -1,0 +1,1558 @@
+Mono path[0] = 'C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/PlaytestBuild_Data/Managed'
+Mono path[1] = 'C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/PlaytestBuild_Data/Mono'
+Mono config path = 'C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/PlaytestBuild_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/PlaytestBuild_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55269
+Multi-casting "[IP] 130.226.22.167 [Port] 55269 [Flags] 2 [Guid] 1502679621 [EditorId] 3907487230 [Version] 1048832 [Id] WindowsPlayer(DTU-B498322) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [130.226.22.167:55269]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x412)
+    Vendor:   Intel
+    VRAM:     1024 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\PlaytestBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.784867 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4130 -> priority: 1 
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (23)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+3box (10)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (23)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+3box (10)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække003
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Player
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (23)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+3box (10)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække003
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 12.903531 ms
+System memory in use before: 19.9 MB.
+System memory in use after: 18.4 MB.
+
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 212.
+Total: 0.616121 ms (FindLiveObjects: 0.025961 ms CreateObjectMapping: 0.025659 ms MarkObjects: 0.213725 ms  DeleteObjects: 0.347756 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RestartScript.Start () [0x00000] in C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\RestartScript.cs:12 
+ 
+(Filename: C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/Ninja vs. Pirates/Assets/Scripts/RestartScript.cs Line: 12)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowTimerScore.Start () [0x00000] in C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\ShowTimerScore.cs:10 
+ 
+(Filename: C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/Ninja vs. Pirates/Assets/Scripts/ShowTimerScore.cs Line: 10)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.996178 ms
+System memory in use before: 21.4 MB.
+System memory in use after: 21.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1897.
+Total: 0.282552 ms (FindLiveObjects: 0.046186 ms CreateObjectMapping: 0.028375 ms MarkObjects: 0.199537 ms  DeleteObjects: 0.008150 ms)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (23)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+3box (10)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (9)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (19)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+box (23)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+EndBarrel1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Boxrække
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Collided with: 
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:36)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+3box (10)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+BarrelRoll:OnTriggerEnter(Collider) (at C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\BarrelRoll.cs:37)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.242609 ms
+System memory in use before: 20.0 MB.
+System memory in use after: 18.6 MB.
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 221.
+Total: 0.508051 ms (FindLiveObjects: 0.024451 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.206480 ms  DeleteObjects: 0.260213 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at RestartScript.Start () [0x00000] in C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\RestartScript.cs:12 
+ 
+(Filename: C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/Ninja vs. Pirates/Assets/Scripts/RestartScript.cs Line: 12)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowTimerScore.Start () [0x00000] in C:\Users\AIT-UNF-GDC\Documents\GDC2017-GR2\Ninja vs. Pirates\Assets\Scripts\ShowTimerScore.cs:10 
+ 
+(Filename: C:/Users/AIT-UNF-GDC/Documents/GDC2017-GR2/Ninja vs. Pirates/Assets/Scripts/ShowTimerScore.cs Line: 10)
+
