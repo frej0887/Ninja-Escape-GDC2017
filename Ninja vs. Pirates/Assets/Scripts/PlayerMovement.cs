@@ -238,11 +238,13 @@ public class PlayerMovement : MonoBehaviour{
         }
 
     }
+
     public void Quit() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("MainMenu");
     }
     }
+
     public Vector3 getPlayerPos()    {
         PlayerPos = new Vector3(transform.position.x, transform.position.z, transform.position.y);
         return PlayerPos;
