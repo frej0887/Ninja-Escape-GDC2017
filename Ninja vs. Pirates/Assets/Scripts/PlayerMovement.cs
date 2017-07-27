@@ -12,8 +12,10 @@ public class PlayerMovement : MonoBehaviour{
 
     //Crouch
     public int crouchSpeed = 2;
-    public float normalCrouchHeight = 0.6757823f;
+    public float normalHeight = 1.4f;
     public float crouchHeight = 0.4f;
+    public CapsuleCollider myCapsuleCollider;
+    public bool crouch = false;
 
     //Sticky and Slippery Floor
     public float stickyFloorSpeed;
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour{
     public TimerScript timer;
     public GameObject plusTimer;
 
+    //Andet
     public PlayerSound PS;
     public Rigidbody myRigidBody;
     public Vector3 PlayerPos;
@@ -51,6 +54,7 @@ public class PlayerMovement : MonoBehaviour{
     // Use this for initialization
     void Start ()    {
         myRigidBody = GetComponent<Rigidbody>();
+        myCapsuleCollider = GetComponent<CapsuleCollider>();
         PS = GetComponent<PlayerSound>();
     }
 	
@@ -82,7 +86,12 @@ public class PlayerMovement : MonoBehaviour{
 
             if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) {
                 PS.WalkSound();
-                ninjaController.CrossFade("Walk", aniCrossFade);
+                if (!crouch)     {
+                    ninjaController.CrossFade("Walk", aniCrossFade);
+                }
+                else if (crouch)    {
+                    ninjaController.CrossFade("Crouch Gå", aniCrossFade);
+                }
             }
 
             if (Input.GetAxis("Horizontal") > 0)    {
@@ -105,7 +114,12 @@ public class PlayerMovement : MonoBehaviour{
 
             if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)     {
                 PS.WalkSound();
-                ninjaController.CrossFade("Walk", aniCrossFade);
+                if (!crouch)    {
+                    ninjaController.CrossFade("Walk", aniCrossFade);
+                }
+                else if (crouch)    {
+                    ninjaController.CrossFade("Crouch Gå", aniCrossFade);
+                }
             }
 
             if (Input.GetAxis("Horizontal") < 0)    {
@@ -144,10 +158,17 @@ public class PlayerMovement : MonoBehaviour{
     public void Crouch()    {
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.X))    {
             moveSpeed = crouchSpeed;
-
+            myCapsuleCollider.height = crouchHeight;
+            myCapsuleCollider.center = new Vector3(0, .28f, 0); 
+            ninjaController.CrossFade("Crouch ned", aniCrossFade);
+            crouch = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.X))    {
             moveSpeed = standardMoveSpeed;
+            myCapsuleCollider.height = normalHeight;
+            myCapsuleCollider.center = new Vector3(0, .7f, 0);
+            ninjaController.CrossFade("Crouch Op", aniCrossFade);
+            crouch = false;
         }
     }
 
