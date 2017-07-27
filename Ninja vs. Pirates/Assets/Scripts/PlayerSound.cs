@@ -8,7 +8,7 @@ public class PlayerSound : MonoBehaviour
     public AudioClip Walk;
     public AudioClip Jump;
     public AudioClip[] StickySound;
-    public AudioClip BarrelHitSound;
+    public AudioClip[] BarrelHitSound;
 
     public AudioSource Audio;
 
@@ -64,7 +64,8 @@ public class PlayerSound : MonoBehaviour
 
         Audio.volume = BarrelHitVolume;
         Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
-        Audio.clip = BarrelHitSound;
+        int lyd = Random.Range(0, BarrelHitSound.Length);
+        Audio.clip = BarrelHitSound[lyd];
         Audio.Play();
 
     }

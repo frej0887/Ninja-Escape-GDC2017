@@ -799,7 +799,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010679243772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 0.099, z: -57.8}
+  m_LocalPosition: {x: 3.299346, y: -0.0000012492847, z: -10.47976}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1236,6 +1236,11 @@ MonoBehaviour:
   flaskHit: 0
   drunkTimer: 0
   timeDrunk: 8
+  Flask: {fileID: 0}
+  Flask2: {fileID: 0}
+  Flask3: {fileID: 0}
+  Flask4: {fileID: 0}
+  Flask5: {fileID: 0}
   ninjaController: {fileID: 95000010362163258}
   aniCrossFade: 0.05
 --- !u!114 &114000014008177894
@@ -1255,12 +1260,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9b53a80ce17965d4e8079651a2468a58, type: 3}
   - {fileID: 8300000, guid: b21bab10e92da144e84b37c5ab862d84, type: 3}
   - {fileID: 8300000, guid: a9086f5374b71f7428105e519e627859, type: 3}
-  BarrelHitSound: {fileID: 0}
+  BarrelHitSound:
+  - {fileID: 8300000, guid: d8474e901abdb8f40929ed8035a0a03b, type: 3}
+  - {fileID: 8300000, guid: 0d95a8088c31d8f45853585b06fca2d3, type: 3}
   Audio: {fileID: 82000013726179392}
   WalkVolume: 0.4
   JumpVolume: 0.4
   StickyVolume: 1
-  BarrelHitVolume: 0
+  BarrelHitVolume: 1
   minWalkingPitch: 0.8
   maxWalkingPitch: 1.2
   InSticky: 0
