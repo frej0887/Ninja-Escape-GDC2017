@@ -17,7 +17,7 @@ public class SlipperyFloorScript : MonoBehaviour {
         if(other.tag == "Player") {
             print("SlipperyFloor");
                if(Vector3.Distance(transform.position, player.transform.position) > pushBackDistance ) {
-        //        player.GetComponent<Pl>();
+                //player.GetComponent<Pl>();
                }
 
         }

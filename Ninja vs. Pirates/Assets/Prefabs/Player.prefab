@@ -233,7 +233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011897358170
 GameObject:
   m_ObjectHideFlags: 1
@@ -1228,8 +1228,12 @@ MonoBehaviour:
   rotationSpeed: 100
   runSpeed: 9
   crouchSpeed: 2
+  normalCrouchHeight: 0.6757823
+  crouchHeight: 0.4
   stickyFloorSpeed: 2
   onStickyFloor: 0
+  slipperyFloorSpeed: 0
+  onSlippery: 0
   jumpHeight: 5
   jumpTime: 0.9
   lastJump: -0.9
@@ -1238,11 +1242,15 @@ MonoBehaviour:
   time2: 4
   stunTime: 1
   timer: {fileID: 0}
+  plusTimer: {fileID: 0}
   PS: {fileID: 0}
-  myRigidBody: {fileID: 54000012371157742}
+  myRigidBody: {fileID: 0}
   PlayerPos: {x: 0, y: 0, z: 0}
   PlayerSize: {x: 0, y: 0, z: 0}
-  ninjaController: {fileID: 95000012212595392}
+  drunk: 0
+  drunkTimer: 0
+  drunkTime: 0
+  ninjaController: {fileID: 0}
   aniCrossFade: 0.01
 --- !u!114 &114000012258970688
 MonoBehaviour:
@@ -1258,7 +1266,7 @@ MonoBehaviour:
   Walk: {fileID: 8300000, guid: 39f16a232de2b434abb732d2eadaf6af, type: 3}
   Jump: {fileID: 8300000, guid: f710dda31869cda44b06bd0d2ca89424, type: 3}
   StickySound: []
-  Audio: {fileID: 82000011567807750}
+  Audio: {fileID: 0}
   WalkVolume: 1
   JumpVolume: 1
   StickyVolume: 1
