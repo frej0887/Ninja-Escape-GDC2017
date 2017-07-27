@@ -9,8 +9,12 @@ public class PlayerSound : MonoBehaviour
     public AudioClip Jump;
     public AudioClip[] StickySound;
     public AudioClip[] BarrelHitSound;
+    public AudioClip[] StartDrunkSound;
+    public AudioClip[] BubblesSound;
+    public AudioClip Burp;
 
     public AudioSource Audio;
+    public AudioSource AudioSource2;
 
     public float WalkVolume;
     public float JumpVolume;
@@ -18,8 +22,11 @@ public class PlayerSound : MonoBehaviour
     public float BarrelHitVolume;
     public float minWalkingPitch;
     public float maxWalkingPitch;
-    
+    public float BubblesVolume;
+    public float DrunkStartVolume;
+    public float BurpVolume;
 
+    public bool HasPlayedStartSound = false;
     public bool InSticky = false;
     public bool IsJumping = false;
 
@@ -69,6 +76,31 @@ public class PlayerSound : MonoBehaviour
         Audio.Play();
 
     }
+    public void DrunkWalkSound() {
+        WalkSound();
+        AudioSource2.volume = BarrelHitVolume;
+        AudioSource2.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
+        int lyd = Random.Range(0, BubblesSound.Length);
+        AudioSource2.clip = BubblesSound[lyd];
+        AudioSource2.Play();
+    }
+    public void StartDrunk()
+    {
+        Audio.volume = DrunkStartVolume;
+        Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
+        int lyd = Random.Range(0, StartDrunkSound.Length);
+        Audio.clip = StartDrunkSound[lyd];
+        Audio.Play();
+        HasPlayedStartSound = true;
 
+
+    }
+    public void EndDrunk() {
+        Audio.volume = BurpVolume;
+        Audio.pitch = Random.Range(minWalkingPitch, maxWalkingPitch);
+        Audio.clip = Burp;
+        Audio.Play();
+        HasPlayedStartSound = false;
+    }
 
 }
