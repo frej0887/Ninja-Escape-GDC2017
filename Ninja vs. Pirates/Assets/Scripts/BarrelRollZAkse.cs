@@ -3,10 +3,10 @@ using System.Collections;
 
 public class BarrelRollZAkse : MonoBehaviour {
     public Rigidbody myRigidBody;
-    public int rotateSpeed;
+    public int moveSpeed;
     public int way = -1;
     public Renderer rend;
-    public float rotateSpeed2;
+    public float rotateSpeed;
    // public BarrelSound BS;
 
     // Use this for initialization
@@ -28,9 +28,10 @@ public class BarrelRollZAkse : MonoBehaviour {
         Roll();
     }
 
-    void Roll()
+    public void Roll()
     {
-        myRigidBody.AddForce(0, 0, way * rotateSpeed * Time.deltaTime, ForceMode.Impulse);
+        myRigidBody.AddForce(0, 0, way * moveSpeed * Time.deltaTime, ForceMode.Impulse);
+        print("Is Rolling");
 
         //BS.RollSound();
     }
@@ -41,11 +42,13 @@ public class BarrelRollZAkse : MonoBehaviour {
         {
             if (way == -1)
             {
+                print(way);
                 way = 1;
             }
             else if (way == 1)
             {
                 way = -1;
+                print("Way is: " + way);
             }
 
             // BS.BarrelTurn();
@@ -55,7 +58,7 @@ public class BarrelRollZAkse : MonoBehaviour {
 
     void RotateTexture()
     {
-        rend.material.mainTextureOffset += new Vector2(rotateSpeed2 * Time.deltaTime * myRigidBody.velocity.z, 0);
+        rend.material.mainTextureOffset += new Vector2(rotateSpeed * Time.deltaTime * myRigidBody.velocity.z, 0);
     }
 
 }
