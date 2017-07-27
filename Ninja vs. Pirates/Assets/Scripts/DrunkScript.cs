@@ -4,6 +4,7 @@ using System.Collections;
 public class DrunkScript : MonoBehaviour {
    // public Animator flask;
     public PlayerMovement plMove;
+    public GameObject Drunk;
 
 	// Use this for initialization
 	void Start () { 
@@ -19,7 +20,8 @@ public class DrunkScript : MonoBehaviour {
         if(plMove.flaskHit == true) {
             //flask.Play("Fall");
             print("Yo!!");
-            Destroy(this.gameObject);
+            this.enabled = false;
+            Destroy(Drunk.gameObject);
         }
 
     }

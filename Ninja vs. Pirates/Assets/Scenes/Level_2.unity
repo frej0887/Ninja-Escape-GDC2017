@@ -295,6 +295,53 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 2.61
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 602223499}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: plusTimer
+      value: 
+      objectReference: {fileID: 917824244}
+    - target: {fileID: 4000012332614312, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012332614312, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012332614312, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: Flask
+      value: 
+      objectReference: {fileID: 183243392}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: Flask2
+      value: 
+      objectReference: {fileID: 929600178}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: Flask3
+      value: 
+      objectReference: {fileID: 1224870528}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: Flask4
+      value: 
+      objectReference: {fileID: 1241629039}
+    - target: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+        type: 2}
+      propertyPath: Flask5
+      value: 
+      objectReference: {fileID: 546457437}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 198d0d07710debe499d1cb3559f7f34a, type: 2}
   m_IsPrefabParent: 0
@@ -1435,6 +1482,10 @@ Prefab:
       propertyPath: m_Name
       value: anker (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d0c6d00d4ea62b645ac138471456997f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e99bf955e6612b543aae8476e99dfff5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0c6d00d4ea62b645ac138471456997f, type: 3}
   m_IsPrefabParent: 0
@@ -2528,6 +2579,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b707e72da3d8d87408492ca257ed0a16, type: 3}
   m_PrefabInternal: {fileID: 132486257}
+--- !u!114 &137113588 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010505925158, guid: 198d0d07710debe499d1cb3559f7f34a,
+    type: 2}
+  m_PrefabInternal: {fileID: 15614486}
+  m_Script: {fileID: 11500000, guid: 75308156e540c3440944c886ac4fd0da, type: 3}
 --- !u!1001 &137555330
 Prefab:
   m_ObjectHideFlags: 0
@@ -3280,7 +3337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 0}
+  plMove: {fileID: 137113588}
+  Drunk: {fileID: 1312270601}
 --- !u!1001 &184544393
 Prefab:
   m_ObjectHideFlags: 0
@@ -4795,6 +4853,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c84e75da74a714548bf93bf1d23b351e, type: 2}
+    - target: {fileID: 100002, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
+      propertyPath: m_Name
+      value: "flaskemedprop(F\xF8rste)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
   m_IsPrefabParent: 0
@@ -5744,6 +5806,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.48370957
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d0c6d00d4ea62b645ac138471456997f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e99bf955e6612b543aae8476e99dfff5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0c6d00d4ea62b645ac138471456997f, type: 3}
   m_IsPrefabParent: 0
@@ -9565,6 +9631,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
+      propertyPath: m_Name
+      value: flaskemedprop4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
   m_IsPrefabParent: 0
@@ -11064,6 +11134,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
+      propertyPath: m_Name
+      value: flaskemedprop2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
   m_IsPrefabParent: 0
@@ -11478,7 +11552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 0}
+  plMove: {fileID: 137113588}
+  Drunk: {fileID: 564806483}
 --- !u!1001 &553487773
 Prefab:
   m_ObjectHideFlags: 0
@@ -11759,6 +11834,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 229097c5a628f47438248a0e212fa3fa, type: 3}
   m_PrefabInternal: {fileID: 563143973}
+--- !u!1 &564806483 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011034495554, guid: 6fb574e63f030b242919a8093bffa280,
+    type: 2}
+  m_PrefabInternal: {fileID: 724408100}
 --- !u!1001 &568147565
 Prefab:
   m_ObjectHideFlags: 0
@@ -15501,6 +15581,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b707e72da3d8d87408492ca257ed0a16, type: 3}
   m_PrefabInternal: {fileID: 740196102}
+--- !u!1 &741099035 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011034495554, guid: 6fb574e63f030b242919a8093bffa280,
+    type: 2}
+  m_PrefabInternal: {fileID: 1504197784}
 --- !u!1001 &759866410
 Prefab:
   m_ObjectHideFlags: 0
@@ -17710,6 +17795,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 229097c5a628f47438248a0e212fa3fa, type: 3}
   m_PrefabInternal: {fileID: 859626386}
+--- !u!1 &861443017 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011034495554, guid: 6fb574e63f030b242919a8093bffa280,
+    type: 2}
+  m_PrefabInternal: {fileID: 154534734}
 --- !u!1001 &867076898
 Prefab:
   m_ObjectHideFlags: 0
@@ -19210,7 +19300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 0}
+  plMove: {fileID: 137113588}
+  Drunk: {fileID: 861443017}
 --- !u!1001 &941572793
 Prefab:
   m_ObjectHideFlags: 0
@@ -25388,7 +25479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 0}
+  plMove: {fileID: 137113588}
+  Drunk: {fileID: 741099035}
 --- !u!1001 &1236110574
 Prefab:
   m_ObjectHideFlags: 0
@@ -25467,7 +25559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded54da5dd166ee43ae78056742cfbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plMove: {fileID: 0}
+  plMove: {fileID: 137113588}
+  Drunk: {fileID: 2142486831}
 --- !u!1001 &1244088057
 Prefab:
   m_ObjectHideFlags: 0
@@ -26248,6 +26341,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012087045032, guid: 613c1a1fb3ebae8468c65923c606a501,
     type: 2}
   m_PrefabInternal: {fileID: 1309336353}
+--- !u!1 &1312270601 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011034495554, guid: 6fb574e63f030b242919a8093bffa280,
+    type: 2}
+  m_PrefabInternal: {fileID: 1110345507}
+--- !u!65 &1312270604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312270601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 6.1232336e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1317490289
 Prefab:
   m_ObjectHideFlags: 0
@@ -30826,6 +30936,10 @@ Prefab:
     - target: {fileID: 400002, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
+      propertyPath: m_Name
+      value: flaskemedprop3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffac5fedbe9233f4ba1b1fbbc5ef8f7a, type: 3}
@@ -40013,6 +40127,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b707e72da3d8d87408492ca257ed0a16, type: 3}
   m_PrefabInternal: {fileID: 2142430790}
+--- !u!1 &2142486831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011034495554, guid: 6fb574e63f030b242919a8093bffa280,
+    type: 2}
+  m_PrefabInternal: {fileID: 1627050938}
 --- !u!1001 &2145283963
 Prefab:
   m_ObjectHideFlags: 0
