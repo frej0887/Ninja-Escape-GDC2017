@@ -17,7 +17,7 @@ public class StartToGame : MonoBehaviour {
     }
 
     void TaskOnClick()    {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level switch");
     }
 
 }
