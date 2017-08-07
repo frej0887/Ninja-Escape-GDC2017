@@ -1,25 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DelayedPlay : MonoBehaviour
-{
+public class DelayedPlay1 : MonoBehaviour    {
 
     public AudioSource Audio;
 
-    public int i = 0;
-    public int maxtime;
+    public int number_i = 0;
+    public int maxtime = 0;
     // Use this for initialization
-    void Start()
-    {
+    void Start()    {
 
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        i++;
+    void Update()    {
+        number_i++;
 
-        if (i > maxtime)
+        if (number_i > maxtime)
         {
 
             Audio.Play();
